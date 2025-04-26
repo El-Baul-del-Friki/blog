@@ -1,0 +1,108 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ContactForm from "../components/ContactForm.svelte";
+
+import H2 from "../components/posts/H2.astro";
+import Paragraph from "../components/posts/Paragraph.astro";
+import Blockquote from "../components/posts/Blockquote.astro";
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout title="Sobre mi">
+	<section
+		class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-6 p-6 my-20"
+	>
+		<div
+			class="col-span-2 sm:col-span-1 md:col-span-2 lg:col-span-2 xl:col-span-2"
+		>
+			<article
+				class="bg-white dark:bg-gray-900 rounded-2xl shadow p-4 transition"
+			>
+				<div class="aspect-2/3">
+					<div
+						class="w-full h-full xs:h-dvh bg-cover bg-center bg-no-repeat mask-size-[100%_100%] mask-center mask-no-repeat mask-[url(../images/scribble.png)] bg-[url(../images/richard.jpg)] ..."
+					>
+					</div>
+				</div>
+			</article>
+		</div>
+
+		<div
+			class="col-span-2 sm:col-span-1 md:col-span-2 lg:col-span-2 xl:col-span-4"
+		>
+			<article
+				class="bg-white dark:bg-gray-900 rounded-2xl shadow p-4 transition"
+			>
+				<H2>Hola, soy Richard, aquí mi historia...</H2>
+
+				<Paragraph
+					>Antes de ser desarrollador web, fui un niño a inicios de
+					los 2000 con los bolsillos llenos de tazos y los ojos
+					brillando frente a la pantalla con cada nuevo episodio de
+					Dragon Ball o Pokemon que llegaba a la TV local. Sin
+					saberlo, mis manos pasaron por juguetes y cartas que hoy
+					valdrían cientos (o miles) de dólares: figuras vintage de
+					Pokémon, Beyblade, Transformers, Max Steel, cartas
+					originales de Yu-Gi-Oh… lo que para mí eran solo juguetes,
+					hoy serían piezas de colección codiciadas. Pero no me
+					arrepiento. Todo eso fue parte del camino.</Paragraph
+				>
+
+				<Paragraph
+					>Crecí entre videojuegos, guitarras y reproductores MP3
+					llenos de post-hardcore y metal. Nunca fuimos adinerados,
+					pero tampoco me faltó nada. A los 10 ya tenía una PS1
+					(cortesía de la graduación de mi hermano) y a los 12 una PC
+					que rompí una y otra vez por instalar emuladores y discos
+					piratas. Sin internet en casa, aprendí por cuenta propia.</Paragraph
+				>
+				<Paragraph
+					>Estudié ingeniería en sistemas, pero como las mates no eran
+					lo mío, me cambié a desarrollo de software. El sistema
+					educativo no me ofreció mucho, así que decidí enseñarme por
+					mi cuenta. Me enamoré del software libre, el open source y
+					el poder de las comunidades. Fundé grupos locales, me uní a
+					Mozilla Foundation, viajé por Centroamérica, y descubrí que
+					HTML, JavaScript y Node.js eran herramientas para crear
+					mundos (este blog está hecho de cero con herramientas de
+					desarrollo web 100% open source).</Paragraph
+				>
+				<Paragraph
+					>Conseguí mi primer trabajo como desarrollador web, luego
+					uno a tiempo completo. Me echaron en 2018, justo cuando
+					Panamá celebraba su clasificación al Mundial de Rusia.
+					Mientras unos festejaban, yo buscaba cómo sobrevivir. Probé
+					suerte en cripto, me hackearon tres veces, lo perdí todo. Me
+					alejé. Volví.</Paragraph
+				>
+				<Paragraph
+					>Durante la pandemia, toqué fondo. La soledad y la
+					incertidumbre casi me vencen, pero mis padres —y mi propia
+					determinación— me sacaron del fango. Me reinventé, me formé
+					otra vez. Encontré trabajo en proyectos cripto, NFTs,
+					Solana… por un tiempo, funcionó. Llegué a ganar bien, me
+					venció la avaricia y como muchas cosas en cripto, todo
+					implosionó. Pero hay que aprender y levantarse.</Paragraph
+				>
+				<Paragraph
+					>Te preguntarás... ¿Por qué deberia leer a este tipo?, Lo
+					se, no te estoy vendiendo a alguien influyente, pero si te
+					vendo experiencia y brutal honestidad. Como full stack,
+					gestión de comunidades, coleccionismo y arte digital. Y
+					quiero transformar todo eso en algo real: un espacio donde
+					la nostalgia, la cultura pop y la tecnología se encuentren.
+					Un proyecto que haga del coleccionismo algo accesible,
+					divertido y rentable, sobre todo en Panamá.</Paragraph
+				>
+				<Blockquote>
+					Esta es mi historia. No es perfecta, pero es honesta. Y aún
+					se está escribiendo.
+				</Blockquote>
+
+				<ContactForm client:load />
+			</article>
+		</div>
+	</section>
+</Layout>

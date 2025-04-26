@@ -1,0 +1,13 @@
+---
+// src/components/Blockquote.astro
+const props = Astro.props;
+---
+
+<blockquote
+	{...props}
+	class="text-xl italic font-semibold text-gray-900 dark:text-white"
+>
+	<p>
+		<slot />
+	</p>
+</blockquote>

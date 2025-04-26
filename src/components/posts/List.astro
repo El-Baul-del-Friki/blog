@@ -1,0 +1,8 @@
+---
+// src/components/List.astro
+const props = Astro.props;
+---
+
+<ul {...props} class="space-y-1 my-4 text-lg list-disc list-inside">
+	<slot />
+</ul>

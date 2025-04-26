@@ -1,0 +1,8 @@
+---
+// src/components/Paragraph.astro
+const props = Astro.props;
+---
+
+<p {...props} class="my-4 text-lg">
+	<slot />
+</p>

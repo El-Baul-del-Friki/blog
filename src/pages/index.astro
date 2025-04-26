@@ -1,11 +1,87 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import HeroSlider from "../components/HeroSlider.svelte";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+interface Frontmatter {
+	title: string;
+	date: string;
+	featuredImage: object;
+	excerpt: string;
+	slug: string;
+	featured: boolean;
+	category: string;
+}
+const posts = await Astro.glob<Frontmatter>("../content/posts/*.mdx");
+
+posts.sort(
+	(a, b) =>
+		new Date(b.frontmatter.date).getTime() -
+		new Date(a.frontmatter.date).getTime()
+);
+
+const featuredPosts = posts
+	.filter((post) => post.frontmatter.featured)
+	.slice(0, 3);
+
+// Los que no son featured o los que quedaron fuera del top 3
+const normalPosts = posts.filter(
+	(post) => !post.frontmatter.featured || !featuredPosts.includes(post)
+);
+
+const categoryColors = {
+	general: "bg-blue-200 text-blue-900",
+	cartas: "bg-yellow-100 text-yellow-800",
+	whisky: "bg-amber-200 text-amber-900",
+	arte: "bg-pink-200 text-pink-900",
+};
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Home">
+	<HeroSlider client:load posts={featuredPosts} />
+
+	<section
+		class="grid grid-cols-1 xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 p-6 my-10"
+	>
+		{
+			normalPosts.map((post) => {
+				const categories = post.frontmatter.category.split(",");
+				return (
+					<article class="bg-white dark:bg-gray-900 rounded-2xl shadow p-4 transition">
+						<img
+							src={post.frontmatter.featuredImage.src}
+							alt={post.frontmatter.title}
+							class="rounded-xl mb-4 w-full object-cover max-h-60"
+						/>
+						<h2 class="text-2xl font-bold mb-2">
+							{post.frontmatter.title}
+						</h2>
+						<p class="text-sm text-gray-500 dark:text-gray-400 mb-2">
+							Publicado:{" "}
+							{new Date(
+								post.frontmatter.date
+							).toLocaleDateString()}
+						</p>
+						<div class="flex flex-wrap gap-2 mb-3">
+							{categories.map((category) => (
+								<span
+									class={`px-2 py-1 text-xs font-medium rounded ${categoryColors[category] || "bg-gray-200 text-gray-800"}`}
+								>
+									{category}
+								</span>
+							))}
+						</div>
+						<p class="text-sm">
+							{post.frontmatter.excerpt}...
+							<a
+								href={`/blog/${post.frontmatter.slug}`}
+								class="text-blue-600 dark:text-blue-400 underline text-sm"
+							>
+								Leer más
+							</a>
+						</p>
+					</article>
+				);
+			})
+		}
+	</section>
 </Layout>
