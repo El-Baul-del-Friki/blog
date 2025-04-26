@@ -127,6 +127,7 @@
 					}`}>Contacto</a
 				>
 			</li>
+			<!--
 			<li>
 				<a
 					href="/premium"
@@ -137,6 +138,7 @@
 					}`}>Premium</a
 				>
 			</li>
+      -->
 		</ul>
 
 		<!-- Nav Links (mobile dropdown) -->
@@ -206,7 +208,8 @@
 						on:click={() => (menuOpen = false)}>Contacto</a
 					>
 				</li>
-				<li>
+				<!--
+        <li>
 					<a
 						href="/premium"
 						class={`block ${
@@ -217,6 +220,7 @@
 						on:click={() => (menuOpen = false)}>Premium</a
 					>
 				</li>
+        -->
 			</ul>
 		{/if}
 
