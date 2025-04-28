@@ -1,0 +1,104 @@
+{
+	"data": [
+		{
+			"id": "12da0739-4cde-4736-bdb8-3dec0441a111",
+			"brand": "Pokemon Neo 2 Promo Japanese",
+			"name": "2000 Pokemon Neo 2 Promo Japanese Reverse Holo Charizard #6",
+			"year": 2000,
+			"gradingCompany": "PSA",
+			"grade": "10",
+			"price": 333.04,
+			"photo": "https://onlyalt-images.s3.us-east-2.amazonaws.com/image/public/2926f1d4-8283-4798-8aee-479eee17a878_1744999752049_front.png"
+		},
+		{
+			"id": "edeb9b78-3f6d-4fab-9528-816958abe03a",
+			"brand": "Pokemon 25th Anniversary",
+			"name": "2021 Pokemon 25th Anniversary Creatures Deck Corporate History Uxie #2008",
+			"year": 2021,
+			"gradingCompany": "CGC",
+			"grade": "10",
+			"price": 1102.91,
+			"photo": "https://onlyalt-images.s3.us-east-2.amazonaws.com/image/public/450921e7-41e9-46db-9768-5ca2c3a7db2f_1727106087799_front.png"
+		},
+		{
+			"id": "2323324c-cde0-47cf-bf47-54963284186d",
+			"brand": "Pokemon Ex Team Rocket Returns",
+			"name": "2004 Pokemon Ex Team Rocket Returns Dark Ariados #30",
+			"year": 2004,
+			"gradingCompany": "CGC",
+			"grade": "8.5",
+			"price": 12.27,
+			"photo": "https://onlyalt-images.s3.us-east-2.amazonaws.com/image/public/3365dc3a-a068-4aa4-91c0-590734c65891_1737053209800_front.png"
+		},
+		{
+			"id": "3b1948fe-50bc-4b4f-b276-fac125012143",
+			"brand": "Pokemon Team Rocket",
+			"name": "2000 Pokemon Team Rocket 1st Edition Dark Flareon #35",
+			"year": 2000,
+			"gradingCompany": "PSA",
+			"grade": "9",
+			"price": 47.23,
+			"photo": "https://onlyalt-images.s3.us-east-2.amazonaws.com/image/public/0d0c90c6-1248-4cca-ac5d-0a40d803774e_1743443296109_front.png"
+		},
+		{
+			"id": "d28afbbe-9ffe-4a57-b5bf-7918508a9401",
+			"brand": "Pokemon Team Rocket",
+			"name": "2000 Pokemon Team Rocket 1st Edition Holo Dark Dugtrio #6",
+			"year": 2000,
+			"gradingCompany": "PSA",
+			"grade": "7",
+			"price": 51.85,
+			"photo": "https://onlyalt-images.s3.us-east-2.amazonaws.com/image/public/457d0916-2939-4868-9e73-7b7e76a65004_1743522917884_front.png"
+		},
+		{
+			"id": "d43f4b3a-6094-425b-8439-67550c9a02b6",
+			"brand": "Pokemon Clay Burst Korean",
+			"name": "2023 Pokemon Clay Burst Korean Art Rare Holo Grafaiai #80",
+			"year": 2023,
+			"gradingCompany": "CGC",
+			"grade": "9",
+			"price": 14.92,
+			"photo": "https://onlyalt-images.s3.us-east-2.amazonaws.com/image/public/3e225eab-db59-4537-942e-f1e68da574a6_1738348917698_front.png"
+		},
+		{
+			"id": "live_08a28dc6-732a-4e4f-9da2-f77d9ea6bb78",
+			"brand": "Pokemon Scarlet and Violet Paldea Evolved Clay Burst",
+			"name": "2023 Pokemon Scarlet and Violet Paldea Evolved Clay Burst Art Rare Tyranitar #79",
+			"year": 2023,
+			"gradingCompany": "BGS",
+			"grade": "9.5",
+			"price": 18.14,
+			"photo": "https://alt-images.b-cdn.net/external/ebay/live/196915350872_0.jpg?height=auto&width=auto&quality=50"
+		},
+		{
+			"id": "live_334f507c-e84d-4789-bc45-c86312c4540f",
+			"brand": "Pokemon Sun and Moon Team Up",
+			"name": "2019 Pokemon Sun and Moon Team Up Latias/Latios Gx #170",
+			"year": 2019,
+			"gradingCompany": "BGS",
+			"grade": "10",
+			"price": 5793.43,
+			"photo": "https://alt-images.b-cdn.net/external/ebay/live/388043491114_0.jpg?height=auto&width=auto&quality=50"
+		},
+		{
+			"id": "live_28935967-9370-40a9-be0a-18e850bb7e6b",
+			"brand": "Pokemon Neo Genesis",
+			"name": "2000 Pokemon Neo Genesis 1st Edition Holo Lugia #9",
+			"year": 2000,
+			"gradingCompany": "BGS",
+			"grade": "9.5",
+			"price": 7193.29,
+			"photo": "https://alt-images.b-cdn.net/external/ebay/live/286276652834_0.jpg?height=auto&width=auto&quality=50"
+		},
+		{
+			"id": "live_f2055d39-be39-41f9-94d1-67e959df5960",
+			"brand": "Pokemon Rocket Japanese",
+			"name": "1997 Pokemon Rocket Japanese Holo Dark Charizard #6",
+			"year": 1997,
+			"gradingCompany": "BGS",
+			"grade": "BL",
+			"price": 15476.09,
+			"photo": "https://alt-images.b-cdn.net/external/ebay/live/156895177501_0.jpg?height=auto&width=auto&quality=50"
+		}
+	]
+}

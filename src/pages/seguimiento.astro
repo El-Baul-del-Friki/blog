@@ -1,0 +1,162 @@
+---
+import Layout from "../layouts/Layout.astro";
+import whiskyToplist from "../content/data/whiskies.json";
+import cardTopList from "../content/data/cards.json";
+import artTopList from "../content/data/art.json";
+---
+
+<Layout title="Seguimiento de Precios">
+	<article class="bg-white dark:bg-gray-900 mx-auto p-6 my-20">
+		<h1 class="text-4xl font-bold mb-2">
+			Seguimiento de precios en coleccionables destacados
+		</h1>
+
+		<p class="mt-2 text-lg leading-8">
+			Actualización constante de precios en cartas, whisky y obras de arte
+			seleccionadas.
+		</p>
+
+		{/* Dropdown de filtros */}
+		<div class="my-6">
+			<select id="categoryFilter" class="p-2 border rounded-md">
+				<option value="all">Todas</option>
+				<option value="art">Arte</option>
+				<option value="whisky">Whisky</option>
+				<option value="cards">Cartas Gradeadas</option>
+			</select>
+		</div>
+
+		<div
+			id="collectiblesGrid"
+			class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-8 xl:gap-x-8"
+		>
+			{
+				artTopList.data.map((art) => (
+					<div class="group relative" data-category="art">
+						<img
+							src={art.photo}
+							alt={art.name}
+							class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-100"
+						/>
+						<div class="mt-4 flex justify-between">
+							<div>
+								<h3 class="text-sm text-gray-700 dark:text-gray-200">
+									<a
+										href={`https://www.artsy.net${art.href}`}
+										target="_blank"
+									>
+										<span
+											aria-hidden="true"
+											class="absolute inset-0"
+										/>
+										{art.name}
+									</a>
+								</h3>
+								<p class="mt-1 text-sm text-gray-500 dark:text-gray-300">
+									{art.artist}
+								</p>
+							</div>
+							<p class="text-sm font-medium text-gray-900 dark:text-gray-100">
+								{art.price ? `${art.price}` : "No disponible"}
+							</p>
+						</div>
+					</div>
+				))
+			}
+			{
+				whiskyToplist.data.map((whisky) => (
+					<div class="group relative" data-category="whisky">
+						<img
+							src={whisky.photo}
+							alt={`${whisky.brandname} ${whisky.name}`}
+							class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-100"
+						/>
+						<div class="mt-4 flex justify-between">
+							<div>
+								<h3 class="text-sm text-gray-700 dark:text-gray-200">
+									<a
+										href={`https://www.whiskybase.com/whiskies/whisky/${whisky.id}`}
+										target="_blank"
+									>
+										<span
+											aria-hidden="true"
+											class="absolute inset-0"
+										/>
+										{whisky.brandname} {whisky.name} (
+										{whisky.age} años) - {whisky.region}
+									</a>
+								</h3>
+								<p class="mt-1 text-sm text-gray-500 dark:text-gray-300">
+									{whisky.type}
+								</p>
+							</div>
+							<p class="text-sm font-medium text-gray-900 dark:text-gray-100">
+								{whisky.price
+									? `$${whisky.price}`
+									: "No disponible"}
+							</p>
+						</div>
+					</div>
+				))
+			}
+			{
+				cardTopList.data.map((card) => (
+					<div class="group relative" data-category="cards">
+						<img
+							src={card.photo}
+							alt={card.name}
+							class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-100"
+						/>
+						<div class="mt-4 flex justify-between">
+							<div>
+								<h3 class="text-sm text-gray-700 dark:text-gray-200">
+									<a
+										href={
+											card.id.startsWith("live_")
+												? `https://app.alt.xyz/browse/external-listing?id=${card.id.replace("live_", "")}&prev=%2Fbrowse%2Ffixed-price%3Fcategory%3DPOKEMON_CARDS%26sortBy%3Dnewest_first`
+												: `https://app.alt.xyz/exchange/select-listing?ids=${card.id}&prev=%2Fbrowse%2Ffixed-price%3Fcategory%3DPOKEMON_CARDS%26sortBy%3Dnewest_first`
+										}
+										target="_blank"
+									>
+										<span
+											aria-hidden="true"
+											class="absolute inset-0"
+										/>
+										{card.name}
+									</a>
+								</h3>
+								<p class="mt-1 text-sm text-gray-500 dark:text-gray-300">
+									{card.gradingCompany}: {card.grade}
+								</p>
+							</div>
+							<p class="text-sm font-medium text-gray-900 dark:text-gray-100">
+								{card.price
+									? `$${card.price}`
+									: "No disponible"}
+							</p>
+						</div>
+					</div>
+				))
+			}
+		</div>
+
+		<script type="module" is:inline>
+			const filterSelect = document.getElementById("categoryFilter");
+			const collectibles = document.querySelectorAll(
+				"#collectiblesGrid > div"
+			);
+
+			filterSelect.addEventListener("change", (e) => {
+				const value = e.target.value;
+				collectibles.forEach((item) => {
+					const category = item.getAttribute("data-category");
+					if (value === "all" || value === category) {
+						item.style.display = "";
+					} else {
+						item.style.display = "none";
+					}
+				});
+			});
+		</script>
+	</article>
+</Layout>
