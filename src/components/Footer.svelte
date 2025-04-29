@@ -1,5 +1,5 @@
 <script>
-	import { Mail, MapPin, Twitter, Github, Rss } from "@lucide/svelte";
+	import { Mail, Twitter, Instagram, Facebook, Rss } from "@lucide/svelte";
 </script>
 
 <footer
@@ -21,21 +21,25 @@
 		<a href="mailto:richard@elbauldelfriki.com" aria-label="Correo">
 			<Mail class="w-5 h-5 hover:text-blue-500 transition-colors" />
 		</a>
-		<a href="https://x.com/kurai021" target="_blank" rel="noopener">
-			<Twitter class="w-5 h-5 hover:text-blue-500 transition-colors" />
-		</a>
-		<a href="https://github.com/kurai021" target="_blank" rel="noopener">
-			<Github class="w-5 h-5 hover:text-blue-500 transition-colors" />
-		</a>
-		<a href="/feed.xml" target="_blank" rel="noopener">
-			<Rss class="w-5 h-5 hover:text-blue-500 transition-colors" />
-		</a>
 		<a
-			href="https://www.google.com/maps/place/Los+Algarrobos,+Provincia+de+Veraguas/@8.082969,-81.3396276,63498m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8fae6dd89d9f08c3:0x22d4a80d57ca4e50!8m2!3d8.0899554!4d-81.0423429!16s%2Fg%2F11bw8dwhqb?entry=ttu&g_ep=EgoyMDI1MDQwNy4wIKXMDSoASAFQAw%3D%3D"
+			href="https://www.facebook.com/people/El-Ba%C3%BAl-del-Friki/61575508633266"
 			target="_blank"
 			rel="noopener"
 		>
-			<MapPin class="w-5 h-5 hover:text-blue-500 transition-colors" />
+			<Facebook class="w-5 h-5 hover:text-blue-500 transition-colors" />
+		</a>
+		<a
+			href="https://www.instagram.com/elbauldelfriki_"
+			target="_blank"
+			rel="noopener"
+		>
+			<Instagram class="w-5 h-5 hover:text-blue-500 transition-colors" />
+		</a>
+		<a href="https://x.com/elbauldelfriki" target="_blank" rel="noopener">
+			<Twitter class="w-5 h-5 hover:text-blue-500 transition-colors" />
+		</a>
+		<a href="/feed.xml" target="_blank" rel="noopener">
+			<Rss class="w-5 h-5 hover:text-blue-500 transition-colors" />
 		</a>
 	</div>
 </footer>
