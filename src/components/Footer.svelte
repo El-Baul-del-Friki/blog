@@ -8,11 +8,7 @@
 	<!-- Left text-->
 	<div class="sm:block py-3 text-gray-600 dark:text-gray-400">
 		<p>
-			© 2025 El Baúl del Friki. Código disponible bajo licencia <a
-				href="https://opensource.org/licenses/MIT"
-				target="_blank"
-				rel="noopener noreferrer">MIT</a
-			>.
+			© 2025 El Baúl del Friki.
 		</p>
 	</div>
 
