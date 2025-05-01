@@ -18,7 +18,8 @@ import H3 from "../../components/posts/H3.astro";
 import Paragraph from "../../components/posts/Paragraph.astro";
 import List from "../../components/posts/List.astro";
 import Blockquote from "../../components/posts/Blockquote.astro";
-import RareWhiskyIndex from "../../components/RareWhiskyIndex.svelte"
+import RareWhiskyIndex from "../../components/RareWhiskyIndex.svelte";
+import CTA from '../../components/posts/CTA.astro';
 
 export const components = {
   h2: H2,
@@ -178,3 +179,5 @@ Por ahora, cierro este recorrido sabiendo que cada botella no solo puede contar 
 🥃 **¿Y tú?**
 
 ¿Fue el sabor, la historia o la inversión lo que te trajo al mundo del whisky?. Comparte tu primera gran botella o esa que siempre sueñas tener. Te leo.
+
+<CTA category={frontmatter.category} />

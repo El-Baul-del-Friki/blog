@@ -1,0 +1,53 @@
+---
+// src/components/CTA.astro
+const { category } = Astro.props;
+
+const messages = {
+	whisky: {
+		title: "¿Quieres adentrarte en el mundo del whisky y el bourbon?",
+		message:
+			"Si estás pensando en comenzar a coleccionar whisky, bourbon u otras bebidas, escríbeme desde la sección de contacto —respondo personalmente.",
+		cta: "Quiero aprender a coleccionar whisky",
+	},
+	cartas: {
+		title: "¿Te atraen los TCG como Pokémon o Magic?",
+		message:
+			"Escríbeme desde la sección de contacto, estaré encantado de ayudarte a encaminar tu colección.",
+		cta: "Quiero aprender sobre cartas coleccionables",
+	},
+	arte: {
+		title: "¿Te gustaría invertir en arte o piezas con historia?",
+		message:
+			"Puedes escribirme desde la sección de contacto para intercambiar ideas.",
+		cta: "Quiero descubrir piezas únicas",
+	},
+	general: {
+		title: "¿Quieres explorar el mundo del coleccionismo?",
+		message:
+			"Escríbeme desde la sección de contacto y te responderé pronto.",
+		cta: "Quiero descubrir nuevos objetos para coleccionar",
+	},
+};
+---
+
+<section class="bg-white dark:bg-gray-900 mb-8">
+	<div class="py-4 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+		<div class="mx-auto max-w-screen-sm text-center">
+			<h2
+				class="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white"
+			>
+				{messages[category].title || messages.general.title}
+			</h2>
+			<p
+				class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg"
+			>
+				{messages[category].message || messages.general.message}
+			</p>
+			<a
+				href="/contacto"
+				class="bg-black text-white py-2 px-4 rounded hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 transition"
+				>{messages[category].cta || messages.general.cta}</a
+			>
+		</div>
+	</div>
+</section>

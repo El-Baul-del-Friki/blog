@@ -17,6 +17,7 @@ import H2 from "../../components/posts/H2.astro";
 import Paragraph from "../../components/posts/Paragraph.astro";
 import List from "../../components/posts/List.astro";
 import Blockquote from "../../components/posts/Blockquote.astro";
+import CTA from '../../components/posts/CTA.astro';
 
 export const components = {
   h2: H2,
@@ -102,3 +103,5 @@ Por si fuera poco, el **mercado secundario en Panamá todavía es joven y, en mu
 A este panorama se suma una **falta generalizada de formación especializada**. No es raro ver a coleccionistas que compran sin realmente entender lo que están adquiriendo. Por eso iniciativas educativas, comunidades, eventos para charlar en persona… todo tiene sentido en un país en el que está empezando el tema del coleccionismo.
 
 En medio de este contexto desafiante, el coleccionista panameño se forja con carácter. Porque si bien hay obstáculos, también hay un enorme potencial. En cada vitrina bien curada, en cada conversación con otro apasionado, o en cada apuesta bien pensada por una edición limitada, se construye una cultura de coleccionismo que, aunque joven, tiene toda la capacidad de consolidarse con identidad propia.
+
+<CTA category={frontmatter.category} />

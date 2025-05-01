@@ -3,7 +3,7 @@ title: "Bienvenido al Baúl del Friki: coleccionismo e inversión alternativa"
 date: "2025-04-10"
 category: "general"
 tags: "bienvenida, blog, coleccionismo, visión"
-excerpt: Este es un espacio para coleccionistas e inversionistas que ven valor más allá de los activos tradicionales. Descubre cartas, whiskies y arte como nunca antes
+excerpt: "Este es un espacio para coleccionistas e inversionistas que ven valor más allá de los activos tradicionales. Descubre cartas, whiskies y arte como nunca antes"
 featuredImage:
   src: "images/posts/BIENVENIDO.png"
   width: 1920
@@ -16,6 +16,7 @@ slug: "bienvenido-blog-coleccionismo"
 import H2 from "../../components/posts/H2.astro";
 import Paragraph from "../../components/posts/Paragraph.astro";
 import List from "../../components/posts/List.astro";
+import CTA from '../../components/posts/CTA.astro';
 
 export const components = {
   h2: H2,
@@ -49,4 +50,6 @@ Además, quiero compartir consejos que me hubiera encantado tener al comenzar, p
 
 Gracias por leer. Puedes escribirme al [formulario de contacto](/contacto), te prometo que responderé lo más pronto posible y juntos encaminaremos tu colección.
 
-¡Vamos a construir juntos algo que tenga sentido, historia y valor!
+¡Vamos a construir juntos algo que tenga sentido, historia y valor!.
+
+<CTA category={frontmatter.category} />
