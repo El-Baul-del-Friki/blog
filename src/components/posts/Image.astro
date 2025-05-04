@@ -1,0 +1,20 @@
+---
+const {
+	src,
+	alt = "",
+	className = "",
+	width = "auto",
+	height = "auto",
+} = Astro.props;
+---
+
+<div class="flex justify-center my-6">
+	<img
+		src={src}
+		alt={alt}
+		width={width}
+		height={height}
+		class={`max-w-full h-auto ${className}`}
+		loading="lazy"
+	/>
+</div>
