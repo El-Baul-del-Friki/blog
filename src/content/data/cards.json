@@ -1,104 +1,103 @@
 {
 	"data": [
 		{
-			"id": "12da0739-4cde-4736-bdb8-3dec0441a111",
-			"brand": "Pokemon Neo 2 Promo Japanese",
-			"name": "2000 Pokemon Neo 2 Promo Japanese Reverse Holo Charizard #6",
-			"year": 2000,
-			"gradingCompany": "PSA",
-			"grade": "10",
-			"price": 333.04,
-			"photo": "https://onlyalt-images.s3.us-east-2.amazonaws.com/image/public/2926f1d4-8283-4798-8aee-479eee17a878_1744999752049_front.png"
-		},
-		{
-			"id": "edeb9b78-3f6d-4fab-9528-816958abe03a",
-			"brand": "Pokemon 25th Anniversary",
-			"name": "2021 Pokemon 25th Anniversary Creatures Deck Corporate History Uxie #2008",
-			"year": 2021,
-			"gradingCompany": "CGC",
-			"grade": "10",
-			"price": 1102.91,
-			"photo": "https://onlyalt-images.s3.us-east-2.amazonaws.com/image/public/450921e7-41e9-46db-9768-5ca2c3a7db2f_1727106087799_front.png"
-		},
-		{
-			"id": "2323324c-cde0-47cf-bf47-54963284186d",
-			"brand": "Pokemon Ex Team Rocket Returns",
-			"name": "2004 Pokemon Ex Team Rocket Returns Dark Ariados #30",
-			"year": 2004,
-			"gradingCompany": "CGC",
-			"grade": "8.5",
-			"price": 12.27,
-			"photo": "https://onlyalt-images.s3.us-east-2.amazonaws.com/image/public/3365dc3a-a068-4aa4-91c0-590734c65891_1737053209800_front.png"
-		},
-		{
 			"id": "3b1948fe-50bc-4b4f-b276-fac125012143",
 			"brand": "Pokemon Team Rocket",
 			"name": "2000 Pokemon Team Rocket 1st Edition Dark Flareon #35",
 			"year": 2000,
 			"gradingCompany": "PSA",
 			"grade": "9",
-			"price": 47.23,
+			"price": 48.96,
 			"photo": "https://onlyalt-images.s3.us-east-2.amazonaws.com/image/public/0d0c90c6-1248-4cca-ac5d-0a40d803774e_1743443296109_front.png"
 		},
 		{
-			"id": "d28afbbe-9ffe-4a57-b5bf-7918508a9401",
-			"brand": "Pokemon Team Rocket",
-			"name": "2000 Pokemon Team Rocket 1st Edition Holo Dark Dugtrio #6",
-			"year": 2000,
-			"gradingCompany": "PSA",
-			"grade": "7",
-			"price": 51.85,
-			"photo": "https://onlyalt-images.s3.us-east-2.amazonaws.com/image/public/457d0916-2939-4868-9e73-7b7e76a65004_1743522917884_front.png"
-		},
-		{
-			"id": "d43f4b3a-6094-425b-8439-67550c9a02b6",
-			"brand": "Pokemon Clay Burst Korean",
-			"name": "2023 Pokemon Clay Burst Korean Art Rare Holo Grafaiai #80",
-			"year": 2023,
-			"gradingCompany": "CGC",
-			"grade": "9",
-			"price": 14.92,
-			"photo": "https://onlyalt-images.s3.us-east-2.amazonaws.com/image/public/3e225eab-db59-4537-942e-f1e68da574a6_1738348917698_front.png"
-		},
-		{
-			"id": "live_08a28dc6-732a-4e4f-9da2-f77d9ea6bb78",
-			"brand": "Pokemon Scarlet and Violet Paldea Evolved Clay Burst",
-			"name": "2023 Pokemon Scarlet and Violet Paldea Evolved Clay Burst Art Rare Tyranitar #79",
-			"year": 2023,
+			"id": "bcaab49d-0217-4387-b382-df9363caa4d8",
+			"brand": "Pokemon XY Promo Japanese",
+			"name": "2013 Pokemon XY Promo Japanese Poncho Wearing Pikachu #231XYP",
+			"year": 2013,
 			"gradingCompany": "BGS",
 			"grade": "9.5",
-			"price": 18.14,
-			"photo": "https://alt-images.b-cdn.net/external/ebay/live/196915350872_0.jpg?height=auto&width=auto&quality=50"
+			"price": 3617.09,
+			"photo": "https://onlyalt-images.s3.us-east-2.amazonaws.com/image/public/6dc4baee-fd4e-4411-b7be-d0d792351cbb_1742318818865_front.png"
 		},
 		{
-			"id": "live_334f507c-e84d-4789-bc45-c86312c4540f",
-			"brand": "Pokemon Sun and Moon Team Up",
-			"name": "2019 Pokemon Sun and Moon Team Up Latias/Latios Gx #170",
+			"id": "live_7adab635-99a2-4f92-b82c-e3f90d04b3b6",
+			"brand": "Pokemon Sun and Moon Hidden Fates",
+			"name": "2019 Pokemon Sun and Moon Hidden Fates Shiny Vault Charizard Gx #SV49",
 			"year": 2019,
 			"gradingCompany": "BGS",
-			"grade": "10",
-			"price": 5793.43,
-			"photo": "https://alt-images.b-cdn.net/external/ebay/live/388043491114_0.jpg?height=auto&width=auto&quality=50"
+			"grade": "BL",
+			"price": 4497.29,
+			"photo": "https://alt-images.b-cdn.net/external/ebay/live/376183707735_0.jpg?height=auto&width=auto&quality=50"
 		},
 		{
-			"id": "live_28935967-9370-40a9-be0a-18e850bb7e6b",
-			"brand": "Pokemon Neo Genesis",
-			"name": "2000 Pokemon Neo Genesis 1st Edition Holo Lugia #9",
-			"year": 2000,
+			"id": "live_91e4d126-62dd-40fb-a9c9-56904487d6ad",
+			"brand": "Pokemon Sword and Shield Fusion Strike",
+			"name": "2021 Pokemon Sword and Shield Fusion Strike Secret Rare Gengar Vmax #271",
+			"year": 2021,
+			"gradingCompany": "BGS",
+			"grade": "10",
+			"price": 1900.96,
+			"photo": "https://alt-images.b-cdn.net/external/ebay/live/396536565335_0.jpg?height=auto&width=auto&quality=50"
+		},
+		{
+			"id": "live_39f20235-2e50-4d18-92ad-b75d18483073",
+			"brand": "Pokemon Vending Series 3",
+			"name": "1998 Pokemon Vending Series 3 Ooyama's Pikachu",
+			"year": 1998,
 			"gradingCompany": "BGS",
 			"grade": "9.5",
-			"price": 7193.29,
-			"photo": "https://alt-images.b-cdn.net/external/ebay/live/286276652834_0.jpg?height=auto&width=auto&quality=50"
+			"price": 879.67,
+			"photo": "https://alt-images.b-cdn.net/external/ebay/live/286466958230_0.jpg?height=auto&width=auto&quality=50"
 		},
 		{
-			"id": "live_f2055d39-be39-41f9-94d1-67e959df5960",
-			"brand": "Pokemon Rocket Japanese",
-			"name": "1997 Pokemon Rocket Japanese Holo Dark Charizard #6",
-			"year": 1997,
+			"id": "live_5c73bccc-f9a2-4bd3-9bd2-5ee1419b61a2",
+			"brand": "Pokemon Terastal Festival Ex Japanese",
+			"name": "2024 Pokemon Terastal Festival Ex Japanese Special Art Rare Umbreon Ex #217",
+			"year": 2024,
+			"gradingCompany": "BGS",
+			"grade": "10",
+			"price": 800.41,
+			"photo": "https://alt-images.b-cdn.net/external/ebay/live/177066327085_0.jpg?height=auto&width=auto&quality=50"
+		},
+		{
+			"id": "live_95c8512e-df76-464e-abb1-479f70ee49a3",
+			"brand": "Prismatic Evolutions",
+			"name": "2025 Prismatic Evolutions English Special Illustration Rare Sylveon Ex #156",
+			"year": 2025,
+			"gradingCompany": "BGS",
+			"grade": "9",
+			"photo": "https://alt-images.b-cdn.net/external/ebay/live/326513180886_0.jpg?height=auto&width=auto&quality=50"
+		},
+		{
+			"id": "live_09292996-55f7-4357-ba8a-68dc5fbaf0c8",
+			"brand": "Pokemon Neo Revelation",
+			"name": "2001 Pokemon Neo Revelation 1st Edition Holo Ho-Oh #7",
+			"year": 2001,
+			"gradingCompany": "BGS",
+			"grade": "8.5",
+			"price": 512.41,
+			"photo": "https://alt-images.b-cdn.net/external/ebay/live/205463040423_0.jpg?height=auto&width=auto&quality=50"
+		},
+		{
+			"id": "live_deb24853-a89d-4719-9c9a-dc41988fcdb2",
+			"brand": "Pokemon Sword and Shield High Class Pack Vstar Universe Japanese",
+			"name": "2022 Pokemon Sword and Shield High Class Pack Vstar Universe Japanese Deoxys Vstar #223",
+			"year": 2022,
 			"gradingCompany": "BGS",
 			"grade": "BL",
-			"price": 15476.09,
-			"photo": "https://alt-images.b-cdn.net/external/ebay/live/156895177501_0.jpg?height=auto&width=auto&quality=50"
+			"price": 287.11,
+			"photo": "https://alt-images.b-cdn.net/external/ebay/live/187159792573_0.jpg?height=auto&width=auto&quality=50"
+		},
+		{
+			"id": "live_89236532-014c-4373-8559-1c32502dd959",
+			"brand": "Pokemon Prismatic Evolutions",
+			"name": "2025 Pokemon Prismatic Evolutions Special Illustration Rare Eevee Ex #167",
+			"year": 2025,
+			"gradingCompany": "BGS",
+			"grade": "9.5",
+			"price": 301.58,
+			"photo": "https://alt-images.b-cdn.net/external/ebay/live/326513196105_0.jpg?height=auto&width=auto&quality=50"
 		}
 	]
 }
