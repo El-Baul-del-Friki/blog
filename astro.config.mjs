@@ -9,9 +9,13 @@ import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 import mdx from '@astrojs/mdx';
 
+import compress from 'astro-compress';
+
 // https://astro.build/config
 export default defineConfig({
-  integrations: [svelte(), markdoc(), partytown(), sitemap(), mdx()],
+  integrations: [svelte(), markdoc(), partytown(), sitemap(), mdx(), compress({
+    Image: true
+  })],
 
   vite: {
     plugins: [tailwindcss()]
