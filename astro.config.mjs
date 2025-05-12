@@ -37,5 +37,8 @@ export default defineConfig({
   adapter: netlify(),
   vite: {
     plugins: [tailwindcss()]
-  }
+  },
+  experimental: {
+    session: true, // Agrega esta línea
+  },
 });
