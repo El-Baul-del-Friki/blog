@@ -3,13 +3,11 @@
 </script>
 
 <footer
-	class="fixed bottom-0 left-0 w-full h-12 px-4 md:px-8 flex items-centered justify-between bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-t border-gray-200 dark:border-gray-700 text-sm z-50"
+	class="fixed bottom-0 left-0 w-full h-12 px-4 md:px-8 flex items-centered justify-between bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-t border-gray-200 dark:border-gray-700 text-sm z-10"
 >
 	<!-- Left text-->
 	<div class="sm:block py-3 text-gray-600 dark:text-gray-400">
-		<p>
-			© 2025 El Baúl del Friki.
-		</p>
+		<p>© 2025 El Baúl del Friki.</p>
 	</div>
 
 	<!-- Social & Contact -->

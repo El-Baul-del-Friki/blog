@@ -119,6 +119,16 @@
 			</li>
 			<li>
 				<a
+					href="/servicios"
+					class={`transition-colors hover:text-blue-500 ${
+						currentPath === "/servicios"
+							? "text-gray-700 dark:text-gray-300 underline font-bold"
+							: "text-gray-700 dark:text-gray-300"
+					}`}>Servicios Premium</a
+				>
+			</li>
+      <li>
+				<a
 					href="/contacto"
 					class={`transition-colors hover:text-blue-500 ${
 						currentPath === "/contacto"
@@ -127,18 +137,6 @@
 					}`}>Contacto</a
 				>
 			</li>
-			<!--
-			<li>
-				<a
-					href="/premium"
-					class={`transition-colors hover:text-blue-500 ${
-						currentPath === "/premium"
-							? "text-gray-700 dark:text-gray-300 underline font-bold"
-							: "text-gray-700 dark:text-gray-300"
-					}`}>Premium</a
-				>
-			</li>
-      -->
 		</ul>
 
 		<!-- Nav Links (mobile dropdown) -->
@@ -199,6 +197,17 @@
 				</li>
 				<li>
 					<a
+						href="/servicios"
+						class={`block ${
+							currentPath === "/servicios"
+								? "text-gray-700 dark:text-gray-300 underline font-bold"
+								: "text-gray-700 dark:text-gray-300"
+						}`}
+						on:click={() => (menuOpen = false)}>Servicios Premium</a
+					>
+				</li>
+        <li>
+					<a
 						href="/contacto"
 						class={`block ${
 							currentPath === "/contacto"
@@ -208,19 +217,6 @@
 						on:click={() => (menuOpen = false)}>Contacto</a
 					>
 				</li>
-				<!--
-        <li>
-					<a
-						href="/premium"
-						class={`block ${
-							currentPath === "/premium"
-								? "text-gray-700 dark:text-gray-300 underline font-bold"
-								: "text-gray-700 dark:text-gray-300"
-						}`}
-						on:click={() => (menuOpen = false)}>Premium</a
-					>
-				</li>
-        -->
 			</ul>
 		{/if}
 

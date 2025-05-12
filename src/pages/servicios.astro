@@ -1,0 +1,362 @@
+---
+import Layout from "../layouts/Layout.astro";
+import InitiateForm from "../components/InitiateForm.svelte";
+import CollectorForm from "../components/CollectorForm.svelte";
+import ConnoissieurForm from "../components/ConnoissieurForm.svelte";
+
+import H2 from "../components/posts/H2.astro";
+import Paragraph from "../components/posts/Paragraph.astro";
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout title="Curadoria de Inversiones">
+	<section class="bg-white dark:bg-gray-900 my-20">
+		<div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+			<div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+				<H2>Curadoría de Inversiones Alternativas</H2>
+				<Paragraph>
+					¡En el Baúl del Friki queremos que aprendas a invertir! Me
+					especializo en activos alternativos como cartas
+					coleccionables, arte contemporáneo y licores raros y
+					exclusivos, todos con alto impacto cultural y financiero.
+					Bajo mi atención estarás en contacto directo con tiendas,
+					galerías y contactos de primer nivel.
+				</Paragraph>
+			</div>
+			<div
+				class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0"
+			>
+				<!-- Pricing Card -->
+				<div
+					class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white"
+				>
+					<h3 class="mb-4 text-2xl font-semibold">Initiate</h3>
+					<p
+						class="font-light text-gray-500 sm:text-lg dark:text-gray-400"
+					>
+						Para quienes están dando sus primeros pasos y quieren
+						aprender de forma guiada.
+					</p>
+					<div class="flex justify-center items-baseline my-8">
+						<span class="mr-2 text-5xl font-extrabold">Gratis</span>
+					</div>
+					<!-- List -->
+					<ul role="list" class="mb-8 space-y-4 text-left">
+						<li class="flex items-center space-x-3">
+							<!-- Icon -->
+							<svg
+								class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+								><path
+									fill-rule="evenodd"
+									d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									clip-rule="evenodd"></path></svg
+							>
+							<span
+								>Contenido curado: <span class="font-semibold"
+									>Más allá de los artículos top en la página
+									de Seguimiento</span
+								></span
+							>
+						</li>
+						<li class="flex items-center space-x-3">
+							<!-- Icon -->
+							<svg
+								class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+								><path
+									fill-rule="evenodd"
+									d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									clip-rule="evenodd"></path></svg
+							>
+							<span
+								>Recomendaciones editoriales: <span
+									class="font-semibold"
+									>Libros, documentales y recursos formativos
+									para desarrollar criterio inversor.</span
+								></span
+							>
+						</li>
+						<li class="flex items-center space-x-3">
+							<!-- Icon -->
+							<svg
+								class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+								><path
+									fill-rule="evenodd"
+									d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									clip-rule="evenodd"></path></svg
+							>
+							<span
+								>Comunidad en formación: <span
+									class="font-semibold"
+									>Posibilidad de participar en espacios de
+									discusión futuros (foros, lives, Q&A).</span
+								></span
+							>
+						</li>
+					</ul>
+					<InitiateForm client:load />
+				</div>
+				<!-- Pricing Card -->
+				<div
+					class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white"
+				>
+					<h3 class="mb-4 text-2xl font-semibold">Collector</h3>
+					<p
+						class="font-light text-gray-500 sm:text-lg dark:text-gray-400"
+					>
+						Para usuarios con algo de experiencia o colecciones
+						pequeñas que necesitan dirección táctica.
+					</p>
+					<div class="flex justify-center items-baseline my-8">
+						<span class="mr-2 text-5xl font-extrabold">$99</span>
+						<span class="text-gray-500 dark:text-gray-400"
+							>/año</span
+						>
+					</div>
+					<!-- List -->
+					<ul role="list" class="mb-8 space-y-4 text-left">
+						<li class="flex items-center space-x-3">
+							<!-- Icon -->
+							<svg
+								class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+								><path
+									fill-rule="evenodd"
+									d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									clip-rule="evenodd"></path></svg
+							>
+							<span>Todo lo de Initiate, más:</span>
+						</li>
+						<li class="flex items-center space-x-3">
+							<!-- Icon -->
+							<svg
+								class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+								><path
+									fill-rule="evenodd"
+									d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									clip-rule="evenodd"></path></svg
+							>
+							<span
+								>Acceso prioritario a publicaciones clave y
+								análisis especiales.</span
+							>
+						</li>
+						<li class="flex items-center space-x-3">
+							<!-- Icon -->
+							<svg
+								class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+								><path
+									fill-rule="evenodd"
+									d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									clip-rule="evenodd"></path></svg
+							>
+							<span
+								>Cursos, mentorías y formaciones premium cada
+								trimestre: <span class="font-semibold"
+									>para profundizar en cada vertical (cartas,
+									arte, whisky).</span
+								></span
+							>
+						</li>
+						<li class="flex items-center space-x-3">
+							<!-- Icon -->
+							<svg
+								class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+								><path
+									fill-rule="evenodd"
+									d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									clip-rule="evenodd"></path></svg
+							>
+							<span
+								>Recursos exclusivos sobre análisis y
+								seguimiento de portafolios.</span
+							>
+						</li>
+						<li class="flex items-center space-x-3">
+							<!-- Icon -->
+							<svg
+								class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+								><path
+									fill-rule="evenodd"
+									d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									clip-rule="evenodd"></path></svg
+							>
+							<span
+								>Alertas tempranas sobre tendencias,
+								oportunidades y cambios relevantes en el mercado
+								alternativo.</span
+							>
+						</li>
+						<li class="flex items-center space-x-3">
+							<!-- Icon -->
+							<svg
+								class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+								><path
+									fill-rule="evenodd"
+									d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									clip-rule="evenodd"></path></svg
+							>
+							<span
+								>Acceso preferente a sesiones de revisión de
+								portafolio</span
+							>
+						</li>
+					</ul>
+					<CollectorForm client:load />
+				</div>
+				<!-- Pricing Card -->
+				<div
+					class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white"
+				>
+					<h3 class="mb-4 text-2xl font-semibold">Connoisseur</h3>
+					<p
+						class="font-light text-gray-500 sm:text-lg dark:text-gray-400"
+					>
+						Pensado para coleccionistas e inversores serios que
+						desean tomar decisiones con visión estratégica, respaldo
+						experto y conexiones privilegiadas.
+					</p>
+					<div class="flex justify-center items-baseline my-8">
+						<span class="mr-2 text-5xl font-extrabold">$499</span>
+						<span class="text-gray-500 dark:text-gray-400"
+							>/año</span
+						>
+					</div>
+					<!-- List -->
+					<ul role="list" class="mb-8 space-y-4 text-left">
+						<li class="flex items-center space-x-3">
+							<!-- Icon -->
+							<svg
+								class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+								><path
+									fill-rule="evenodd"
+									d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									clip-rule="evenodd"></path></svg
+							>
+							<span>Todo lo de Collector, más:</span>
+						</li>
+						<li class="flex items-center space-x-3">
+							<!-- Icon -->
+							<svg
+								class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+								><path
+									fill-rule="evenodd"
+									d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									clip-rule="evenodd"></path></svg
+							>
+							<span
+								>Curaduría personalizada de portafolio: <span
+									class="font-semibold"
+									>acompañamiento directo en la selección,
+									compra (o subasta) y rotación de activos
+									según tu perfil e intereses*.</span
+								></span
+							>
+						</li>
+						<li class="flex items-center space-x-3">
+							<!-- Icon -->
+							<svg
+								class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+								><path
+									fill-rule="evenodd"
+									d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									clip-rule="evenodd"></path></svg
+							>
+							<span
+								>Análisis privado de oportunidades emergentes
+								antes de su publicación (nuevas colecciones de
+								artes, cartas, botellas de próximo lanzamiento).</span
+							>
+						</li>
+						<li class="flex items-center space-x-3">
+							<!-- Icon -->
+							<svg
+								class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+								><path
+									fill-rule="evenodd"
+									d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									clip-rule="evenodd"></path></svg
+							>
+							<span
+								>Sesiones privadas 1 a 1 trimestrales o
+								mensuales para revisar metas, dudas e ideas.</span
+							>
+						</li>
+						<li class="flex items-center space-x-3">
+							<!-- Icon -->
+							<svg
+								class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+								><path
+									fill-rule="evenodd"
+									d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									clip-rule="evenodd"></path></svg
+							>
+							<span
+								>Prioridad absoluta en todos los espacios,
+								contenidos y oportunidades del Baúl del Friki
+								(tres encuestas privadas mensuales para elegir
+								un tema).</span
+							>
+						</li>
+					</ul>
+					<small class="text-justify text-[10px]">
+						*El nivel Connoisseur incluye curaduría patrimonial
+						personalizada. A partir de un presupuesto predefinido,
+						se seleccionan piezas tangibles (arte, coleccionables,
+						etc.) que cumplan con criterios de valor cultural y
+						potencial de apreciación. El servicio incluye
+						negociación con proveedores, coordinación logística, y
+						presentación de un informe anual de patrimonio. Se
+						aplica un cargo anual de manejo del 0.5% el primer año y
+						1% en adelante, calculado sobre el valor declarado de
+						los activos bajo gestión. No se garantiza rentabilidad
+						financiera.
+					</small>
+					<ConnoissieurForm client:load />
+				</div>
+			</div>
+		</div>
+	</section>
+</Layout>

@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
 	import { X } from "@lucide/svelte";
-	let isOpen = false;
+	let isOpen: boolean = false;
 
 	function openModal() {
 		isOpen = true;
@@ -9,6 +9,71 @@
 	function closeModal() {
 		isOpen = false;
 	}
+
+  let nombre: string = '';
+  let apellido: string = '';
+  let email: string = '';
+  let message: string = '';
+  let subject: string = ''; // Opcional, puedes añadirlo a tu form
+
+  let statusMessage: string = '';
+  let isLoading: boolean = false;
+  let isSuccess: boolean | null = null;
+
+  async function handleSubmit() {
+        isLoading = true;
+        statusMessage = '';
+        isSuccess = null;
+
+        // Validación básica en cliente (opcional pero recomendada)
+        if (!nombre || !apellido || !email || !message) {
+            statusMessage = 'Por favor, completa todos los campos requeridos.';
+            isSuccess = false;
+            isLoading = false;
+            return;
+        }
+        if (!/^\S+@\S+\.\S+$/.test(email)) {
+            statusMessage = 'Por favor, introduce un correo electrónico válido.';
+            isSuccess = false;
+            isLoading = false;
+            return;
+        }
+
+        try {
+            const response = await fetch('/api/send-email', { // La ruta a tu API endpoint de Astro
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ nombre, apellido, email, message, subject }),
+            });
+
+            const result = await response.json();
+
+            if (response.ok && result.success) {
+                statusMessage = result.message || '¡Formulario enviado con éxito!';
+                isSuccess = true;
+                // Limpiar formulario (opcional)
+                nombre = '';
+                apellido = '';
+                email = '';
+                message = '';
+                subject = '';
+            } else {
+                statusMessage = result.error || 'Ocurrió un error al enviar el formulario.';
+                if (result.details) {
+                    statusMessage += ` Detalles: ${result.details}`;
+                }
+                isSuccess = false;
+            }
+        } catch (error) {
+            console.error('Error al enviar el formulario:', error);
+            statusMessage = 'Error de conexión. Intenta de nuevo más tarde.';
+            isSuccess = false;
+        } finally {
+            isLoading = false;
+        }
+    }
 </script>
 
 <button
@@ -20,10 +85,10 @@
 
 {#if isOpen}
 	<div
-		class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+		class="overflow-x-hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 md:inset-0 max-h-full"
 	>
 		<div
-			class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg max-w-lg w-full p-6 relative"
+			class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg max-w-2xl w-full max-h-full p-6 relative overflow-y-auto"
 		>
 			<button
 				class="absolute top-3 right-4 text-gray-500 hover:text-black dark:hover:text-white"
@@ -34,28 +99,17 @@
 
 			<h1 class="text-2xl font-semibold mb-4">Contáctame</h1>
 
-			<p>
-				Serás redireccionado a un servicio externo en una nueva pestaña
-				al presionar enviar. No te preocupes, esto es normal.
-			</p>
-
 			<form
-				action="https://forms.zohopublic.com/richardelbauld1/form/ElBaldelFrikiContacto/formperma/M7skHwIP3WAKj1XBKic_DS619FpTZ0uw40QY1M2VWDY/htmlRecords/submit"
-				method="POST"
-				target="_blank"
-				accept-charset="UTF-8"
-				enctype="multipart/form-data"
+        on:submit|preventDefault={handleSubmit}
 				class="space-y-4"
 			>
-				<input type="hidden" name="zf_referrer_name" value="" />
-				<input type="hidden" name="zf_redirect_url" value="" />
-				<input type="hidden" name="zc_gad" value="" />
 
 				<div class="flex gap-2">
 					<input
 						type="text"
 						name="Name_First"
 						placeholder="Nombre"
+            bind:value={nombre}
 						class="w-1/2 px-3 py-2 border rounded"
 						required
 					/>
@@ -63,7 +117,9 @@
 						type="text"
 						name="Name_Last"
 						placeholder="Apellido"
+            bind:value={apellido}
 						class="w-1/2 px-3 py-2 border rounded"
+            required
 					/>
 				</div>
 
@@ -71,6 +127,7 @@
 					type="email"
 					name="Email"
 					placeholder="ejemplo@correo.com"
+          bind:value={email}
 					class="w-full px-3 py-2 border rounded"
 					required
 				/>
@@ -79,12 +136,14 @@
 					type="text"
 					name="SingleLine"
 					placeholder="Asunto"
+          bind:value={subject}
 					class="w-full px-3 py-2 border rounded"
 				/>
 
 				<textarea
 					name="MultiLine"
 					placeholder="Escribe tu mensaje..."
+          bind:value={message}
 					class="w-full px-3 py-2 border rounded"
 					rows="5"
 					required
