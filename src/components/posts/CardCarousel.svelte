@@ -41,7 +41,7 @@
 
 <div class="carousel-wrapper mt-4">
 	<button
-		class="carousel-button left-btn"
+		class="carousel-button left-btn dark:text-black"
 		on:click={slideLeft}
 		disabled={currentIndex === 0}
 	>
@@ -75,7 +75,7 @@
 	</div>
 
 	<button
-		class="carousel-button right-btn"
+		class="carousel-button right-btn dark:text-black"
 		on:click={slideRight}
 		disabled={currentIndex >= cards.length - visibleCount}
 	>
@@ -86,7 +86,9 @@
 {#if modalOpen}
 	<div class="modal" on:click={closeModal}>
 		<div class="modal-content" on:click|stopPropagation>
-			<button class="close-btn" on:click={closeModal}>&times;</button>
+			<button class="close-btn dark:text-black" on:click={closeModal}
+				>&times;</button
+			>
 			<img src={modalImage.src} alt="Zoomed image" />
 			{#if modalImage.caption}
 				<p class="mt-2 text-white text-sm">{modalImage.caption}</p>
