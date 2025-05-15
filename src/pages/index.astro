@@ -36,7 +36,7 @@ const categoryColors = {
 };
 ---
 
-<Layout title="Home">
+<Layout title="Inicio">
 	<HeroSlider client:load posts={featuredPosts} />
 
 	<section
@@ -71,7 +71,7 @@ const categoryColors = {
 							))}
 						</div>
 						<p class="text-sm">
-							{post.frontmatter.excerpt}...
+							{post.frontmatter.excerpt}..
 							<a
 								href={`/blog/${post.frontmatter.slug}`}
 								class="text-blue-600 dark:text-blue-400 underline text-sm"

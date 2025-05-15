@@ -11,29 +11,15 @@ import mdx from '@astrojs/mdx';
 
 import netlify from '@astrojs/netlify';
 
-//import compress from 'astro-compress';
+import compress from 'astro-compress';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [
-    svelte(),
-    markdoc(),
-    partytown(),
-    sitemap(),
-    mdx(),
-    // Comenta compress antes de hacer un deploy, solo usalo para comprimir las imagenes
-    /*compress({
-      CSS: false,
-      HTML: {
-        "html-minifier-terser": {
-          removeAttributeQuotes: false,
-        },
-      },
-      Image: true,
-      JavaScript: false,
-      SVG: false,
-    }),*/
-  ],
+  integrations: [svelte(), markdoc(), partytown({
+    config: {
+      forward: ["dataLayer.push"]
+    }
+  }), sitemap(), mdx(), compress()],
   adapter: netlify(),
   vite: {
     plugins: [tailwindcss()]

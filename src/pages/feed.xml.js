@@ -13,7 +13,7 @@ export async function GET(context) {
     site: 'https://elbauldelfriki.com',
     items: blog.map((post) => ({
       title: post.data.title,
-      pubDate: post.data.date,
+      pubDate: new Date(post.data.date),
       description: post.data.excerpt,
       // Compute RSS link from post `id`
       // This example assumes all posts are rendered as `/blog/[id]` routes

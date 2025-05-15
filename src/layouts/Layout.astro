@@ -4,7 +4,7 @@ import Header from "../components/Header.svelte";
 import Footer from "../components/Footer.svelte";
 
 // Recibe la prop 'title' desde la página que lo use
-const { title = "El Baúl del Friki" } = Astro.props;
+const { title = "El Baúl del Friki", excerpt, tags } = Astro.props;
 ---
 
 <!doctype html>
@@ -14,11 +14,30 @@ const { title = "El Baúl del Friki" } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={excerpt} />
+		<meta name="keywords" content={tags} />
+		<meta name="author" content="Richard Armuelles" />
 		<!-- Título dinámico -->
 		<title>
 			{title ? `${title} - El Baúl del Friki` : "El Baúl del Friki"}
 		</title>
-	</head>
+		<script
+			type="text/partytown"
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-16KYH0P8W9"
+		></script></head
+	>
+	<!-- Google tag (gtag.js) -->
+
+	<script type="text/partytown">
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag("js", new Date());
+
+		gtag("config", "G-16KYH0P8W9");
+	</script>
 	<body>
 		<Header client:load />
 		<slot />

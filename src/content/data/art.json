@@ -1,94 +1,94 @@
 {
 	"data": [
 		{
-			"id": "QXJ0d29yazo2ODE1MjRlODVhM2Y4OTAwMTQzOWEyYjU=",
-			"name": "Phenomena Stone Strap",
-			"artist": "Paul Jenkins",
-			"date": "1975",
-			"href": "/artwork/paul-jenkins-phenomena-stone-strap-2",
-			"price": "US$27,000",
-			"photo": "https://d32dm0rphc51dk.cloudfront.net/nn1xM8MnEQ-TjE0XnEqmPw/larger.jpg"
+			"id": "QXJ0d29yazo2ODIwZjQ4NmYxNWQ3MzE0NGY5ZTI0ZjQ=",
+			"name": "Color Bloom",
+			"artist": "Natalia Roman",
+			"date": "2025",
+			"href": "/artwork/natalia-roman-color-bloom",
+			"price": "US$890",
+			"photo": "https://d32dm0rphc51dk.cloudfront.net/g9fwF8z28oopUzQCPsQQsQ/larger.jpg"
 		},
 		{
-			"id": "QXJ0d29yazo2NTM3MWE5OThkZGVhMTAwMGIxNzNjZGE=",
-			"name": "Solzarized Double Profile, Paris",
-			"artist": "Man Ray",
-			"date": "1932",
-			"href": "/artwork/man-ray-solzarized-double-profile-paris",
-			"price": "US$5,000",
-			"photo": "https://d32dm0rphc51dk.cloudfront.net/WqOy3efvVQa1Xnj5VMI7BA/larger.jpg"
-		},
-		{
-			"id": "QXJ0d29yazo2ODE1NDZhZTU2NDc1MTAwMGZlZDg2NmU=",
-			"name": "Blackberries",
-			"artist": "Chloe McEldowney",
-			"date": "2024",
-			"href": "/artwork/chloe-mceldowney-blackberries",
-			"price": "US$115",
-			"photo": "https://d32dm0rphc51dk.cloudfront.net/23pAgwMj9g2MbjVgbW6BDw/larger.jpg"
-		},
-		{
-			"id": "QXJ0d29yazo2ODEzY2Q1MjBmZWVjYTAwMGYwZjE2M2I=",
-			"name": "Instrument (Fugazi)",
-			"artist": "Jimi Gleason",
+			"id": "QXJ0d29yazo2ODIwYTczNWM2YjQzYjAwMGZlMGM1Nzk=",
+			"name": "The Man Who Fell To Earth",
+			"artist": "Russell Young",
 			"date": "2023",
-			"href": "/artwork/jimi-gleason-instrument-fugazi",
-			"price": "US$23,000",
-			"photo": "https://d32dm0rphc51dk.cloudfront.net/Eg4CXXwoIxFq8qitA_TrDg/larger.jpg"
+			"href": "/artwork/russell-young-the-man-who-fell-to-earth",
+			"price": "£8,000",
+			"photo": "https://d32dm0rphc51dk.cloudfront.net/JQ5BFMRCR2arvQoWcHuD3w/larger.jpg"
 		},
 		{
-			"id": "QXJ0d29yazo2ODE1NDhjMzI2OWVjNTAxYWI5MzIyNTU=",
-			"name": "Tomato",
-			"artist": "Chloe McEldowney",
+			"id": "QXJ0d29yazo2ODIwYWQ3NDk3ZDQ5NjAwMTM1ZmE1MDM=",
+			"name": "Lightness Of Being",
+			"artist": "Chris Levine",
+			"date": "2021",
+			"href": "/artwork/chris-levine-lightness-of-being-2120",
+			"price": "£15,000",
+			"photo": "https://d32dm0rphc51dk.cloudfront.net/opRs9R39oLACltpDNszPGA/larger.jpg"
+		},
+		{
+			"id": "QXJ0d29yazo2ODFmOTFkOTc4MWMxZTI4ZmNiZWYxMmU=",
+			"name": "Woods",
+			"artist": "Colleen Franca",
 			"date": "2024",
-			"href": "/artwork/chloe-mceldowney-tomato",
-			"price": "US$115",
-			"photo": "https://d32dm0rphc51dk.cloudfront.net/hLvpZ8avtD9YU1L86yJN5A/larger.jpg"
+			"href": "/artwork/colleen-franca-woods",
+			"price": "US$900",
+			"photo": "https://d32dm0rphc51dk.cloudfront.net/1My_VK0KVD2tkLqMpMSisQ/larger.jpg"
 		},
 		{
-			"id": "QXJ0d29yazo2ODE0MzY3Mzk2NTc3ZDQzMzQxYTYyNGU=",
-			"name": "Tiger Skin Rug",
-			"artist": "Jack Graves III",
+			"id": "QXJ0d29yazo2ODFjN2ZkZWI1MzkyMjAwMTM1MzhiMmQ=",
+			"name": "\"Extraordinary People\" Unique",
+			"artist": "The Connor Brothers",
+			"date": "2020",
+			"href": "/artwork/the-connor-brothers-extraordinary-people-unique-1",
+			"price": "£4,950",
+			"photo": "https://d32dm0rphc51dk.cloudfront.net/KeYARLvhmsk9SGC_JwtLdA/larger.jpg"
+		},
+		{
+			"id": "QXJ0d29yazo2ODFmNThhMDNlOTM3MzAwMGZiYjJlN2I=",
+			"name": "Veil 3/10",
+			"artist": "Jonathan Barber",
+			"date": "2021",
+			"href": "/artwork/jonathan-barber-veil-3-slash-10",
+			"price": "£2,000",
+			"photo": "https://d32dm0rphc51dk.cloudfront.net/9DRpGWmP4M8DR0JSA_QQ5A/larger.jpg"
+		},
+		{
+			"id": "QXJ0d29yazo2ODIxMmY3MjM2YzMzYjY2MDYwZGViNWQ=",
+			"name": "Sérigraphie 9",
+			"artist": "Pierre Soulages",
+			"date": "1978",
+			"href": "/artwork/pierre-soulages-serigraphie-9",
+			"price": "€990",
+			"photo": "https://d32dm0rphc51dk.cloudfront.net/GPNGTXVhXUYOpStOwPaTaw/larger.jpg"
+		},
+		{
+			"id": "QXJ0d29yazo2ODFmODAxZWQzOThhYTQyNWExMGFhZGI=",
+			"name": "House and Water Drips",
+			"artist": "Jill Birschbach",
 			"date": "2025",
-			"href": "/artwork/jack-graves-iii-tiger-skin-rug",
-			"price": "US$450",
-			"photo": "https://d32dm0rphc51dk.cloudfront.net/uzCoNJU50_8NGMe4l_uj9g/larger.jpg"
+			"href": "/artwork/jill-birschbach-house-and-water-drips",
+			"price": "US$125",
+			"photo": "https://d32dm0rphc51dk.cloudfront.net/A3aauuXvb6DQJ45SkTUnuQ/larger.jpg"
 		},
 		{
-			"id": "QXJ0d29yazo2ODE0ZmI3MjE1MjY1ZTQ3ZGRkNjE0NmI=",
-			"name": "Ray Gun Poster – US Death Heart",
-			"artist": "Claes Oldenburg",
-			"date": "1960",
-			"href": "/artwork/claes-oldenburg-ray-gun-poster-us-death-heart",
-			"price": "US$35,000–US$45,000",
-			"photo": "https://d32dm0rphc51dk.cloudfront.net/ipK0u1j_-czxpO2CuQK2cA/larger.jpg"
-		},
-		{
-			"id": "QXJ0d29yazo2ODEyNTVhMTMzY2RhMjAwMTNmY2QzNTk=",
-			"name": "Cercle d'amis #1",
-			"artist": "Obou Gbais",
+			"id": "QXJ0d29yazo2ODFmMzEyOGQzOThhYTQyNWEwZmNjYTk=",
+			"name": "Subway Sonnet #156",
+			"artist": "Susan Washington",
 			"date": "2025",
-			"href": "/artwork/obou-gbais-cercle-damis-number-1",
-			"price": "€400",
-			"photo": "https://d32dm0rphc51dk.cloudfront.net/iRJ5aoWYM55BkqKlxJTC5A/larger.jpg"
+			"href": "/artwork/susan-washington-subway-sonnet-number-156",
+			"price": "US$900",
+			"photo": "https://d32dm0rphc51dk.cloudfront.net/-o5aTHDfU6hxjbz9SNv95Q/larger.jpg"
 		},
 		{
-			"id": "QXJ0d29yazo2N2ZlZGRiN2NhOWZkMzAwMTI3NzFlNjA=",
-			"name": "Lessons in Weathering",
-			"artist": "Genevieve Cohn",
-			"date": "2025",
-			"href": "/artwork/genevieve-cohn-lessons-in-weathering",
-			"price": "US$4,200",
-			"photo": "https://d32dm0rphc51dk.cloudfront.net/J_8oJBDt-ID-i2lxllkLmw/larger.jpg"
-		},
-		{
-			"id": "QXJ0d29yazo2ODExYzg0Y2Q0YmY0MjAwMTRiMDJhZjk=",
-			"name": "one day '22.11.13",
-			"artist": "Naomi Okubo",
-			"date": "2023",
-			"href": "/artwork/naomi-okubo-one-day-22-dot-11-dot-13",
-			"price": "US$400",
-			"photo": "https://d32dm0rphc51dk.cloudfront.net/2ArmJxRfPyFdlnw2S8kwqg/larger.jpg"
+			"id": "QXJ0d29yazo2ODFkNjk1MzAwNmZlNDAwMTQ4OGYxMTQ=",
+			"name": "Espresso Pot",
+			"artist": "Colleen Franca",
+			"date": "2024",
+			"href": "/artwork/colleen-franca-espresso-pot",
+			"price": "US$850",
+			"photo": "https://d32dm0rphc51dk.cloudfront.net/V477uAjq2TaAOi-qBgY-5g/larger.jpg"
 		}
 	]
 }

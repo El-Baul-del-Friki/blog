@@ -52,19 +52,21 @@
 	>
 		<!-- Logo -->
 		<div class="flex items-center">
-			{#if darkMode}
-				<img
-					src={LogoWhite.src}
-					alt="Logo oscuro"
-					class="h-8 transition-opacity duration-300"
-				/>
-			{:else}
-				<img
-					src={Logo.src}
-					alt="Logo claro"
-					class="h-8 transition-opacity duration-300"
-				/>
-			{/if}
+			<a href="/">
+				{#if darkMode}
+					<img
+						src={LogoWhite.src}
+						alt="Logo oscuro"
+						class="h-8 transition-opacity duration-300"
+					/>
+				{:else}
+					<img
+						src={Logo.src}
+						alt="Logo claro"
+						class="h-8 transition-opacity duration-300"
+					/>
+				{/if}
+			</a>
 		</div>
 
 		<!-- Nav Links (desktop) -->
@@ -127,7 +129,7 @@
 					}`}>Servicios Premium</a
 				>
 			</li>
-      <li>
+			<li>
 				<a
 					href="/contacto"
 					class={`transition-colors hover:text-blue-500 ${
@@ -206,7 +208,7 @@
 						on:click={() => (menuOpen = false)}>Servicios Premium</a
 					>
 				</li>
-        <li>
+				<li>
 					<a
 						href="/contacto"
 						class={`block ${
