@@ -1,0 +1,333 @@
+import { n as createVNode, F as Fragment, _ as __astro_tag_component__ } from './astro/server_DP9oE6b1.mjs';
+import { a as $$Paragraph, $ as $$H2 } from './Paragraph_BDAw6C_V.mjs';
+import { $ as $$List } from './List_IS_G1Lwy.mjs';
+import './Image_D51XRMhF.mjs';
+import { $ as $$CTA } from './CTA_8rwlxj7P.mjs';
+import { P as PostCarousel } from './PostCarousel_W1mbBDSf.mjs';
+import 'clsx';
+
+const frontmatter = {
+  "title": "Otros 7 artistas contemporáneos para coleccionar sin arruinarte (otra vez)",
+  "date": "2025-05-13",
+  "category": "arte",
+  "tags": "arte contemporáneo accesible, artistas emergentes, inversión en arte, Daniel Arsham, Chiho Aoshima, Shepard Fairey, coleccionismo joven",
+  "excerpt": "Explora siete artistas contemporáneos que aún puedes coleccionar por menos de $3,000. Desde Daniel Arsham hasta Chiho Aoshima, descubre arte con proyección, narrativa y alto potencial de valorización.",
+  "featuredImage": {
+    "src": "images/posts/arte-contemporaneo-accesible-2.png",
+    "width": 1920,
+    "height": 1080,
+    "format": "png"
+  },
+  "featured": true,
+  "slug": "otros-siete-artistas-por-3000"
+};
+function getHeadings() {
+  return [{
+    "depth": 2,
+    "slug": "7-artistas-contemporáneos-por-menos-de-3000",
+    "text": "7 artistas contemporáneos por menos de $3,000"
+  }, {
+    "depth": 2,
+    "slug": "conclusión",
+    "text": "Conclusión"
+  }];
+}
+const components = {
+  h2: $$H2,
+  p: $$Paragraph,
+  ul: $$List
+};
+const amano = [{
+  src: '/images/posts/carousels/amano/venus-blue.webp',
+  caption: 'Venus (Blue), 2022'
+}, {
+  src: '/images/posts/carousels/amano/venus-purple.webp',
+  caption: 'Venus (Purple), 2021'
+}, {
+  src: '/images/posts/carousels/amano/the-dog.webp',
+  caption: 'The Dog, 2022'
+}, {
+  src: '/images/posts/carousels/amano/venus-pink.webp',
+  caption: 'Venus (Pink), 2021'
+}, {
+  src: '/images/posts/carousels/amano/astro-girl.webp',
+  caption: 'Astro Girl, 2020'
+}];
+const arsham = [{
+  src: '/images/posts/carousels/arsham/cracked-bear-blue.webp',
+  caption: 'Cracked Bear (Blue), 2018'
+}, {
+  src: '/images/posts/carousels/arsham/hollow-mickey-grey.webp',
+  caption: 'Hollow Mickey (Grey), 2020'
+}, {
+  src: '/images/posts/carousels/arsham/crystal-relic.webp',
+  caption: 'Crystal Relic 003, 2021'
+}, {
+  src: '/images/posts/carousels/arsham/eroded-porsche-911-turbo.webp',
+  caption: 'Eroded Porsche 911 Turbo (Gray), 2020'
+}, {
+  src: '/images/posts/carousels/arsham/eroded-delorean.webp',
+  caption: 'Eroded Delorean (Grey), 2021'
+}];
+const mr = [{
+  src: '/images/posts/carousels/mr/gasp-so-good.webp',
+  caption: 'Gasp! So Good!, 2021'
+}, {
+  src: '/images/posts/carousels/mr/happy-birthday-to-you.webp',
+  caption: 'HAPPY BIRTHDAY TO YOU, Hand Signed, 2023'
+}, {
+  src: '/images/posts/carousels/mr/do-it.webp',
+  caption: 'Do it!, 2021'
+}, {
+  src: '/images/posts/carousels/mr/harajuku-kiss.webp',
+  caption: 'Harajuku Kiss, 2021'
+}, {
+  src: '/images/posts/carousels/mr/im-just-waiting-on-a-friend.webp',
+  caption: "I'm Just Waiting On A Friend, 2020"
+}];
+const aoshima = [{
+  src: '/images/posts/carousels/aoshima/building-head-palm-tree.webp',
+  caption: 'Building Head Palm Tree, 2006'
+}, {
+  src: '/images/posts/carousels/aoshima/building-head-chameleon.webp',
+  caption: 'Hot Spring, 2005'
+}, {
+  src: '/images/posts/carousels/aoshima/hot-spring.webp',
+  caption: 'Mushroom Room, 2000'
+}, {
+  src: '/images/posts/carousels/aoshima/mushroom-room.webp',
+  caption: 'Building Head Chameleon, 2006'
+}, {
+  src: '/images/posts/carousels/aoshima/a-courtesan-in-the-field-of-silver-grass.webp',
+  caption: 'A Courtesan in the Field of Silver Grass, 2021'
+}];
+const fairey = [{
+  src: '/images/posts/carousels/fairey/soul-rebel-letterpress.webp',
+  caption: 'Soul Rebel - Letterpress, 2021'
+}, {
+  src: '/images/posts/carousels/fairey/american-rage.webp',
+  caption: 'American Rage, 2019'
+}, {
+  src: '/images/posts/carousels/fairey/peace-justice-haiti.webp',
+  caption: 'Peace & Justice: Haiti, 2013'
+}, {
+  src: '/images/posts/carousels/fairey/chaos-mandala.webp',
+  caption: 'Chaos Mandala, 2025'
+}, {
+  src: '/images/posts/carousels/fairey/handle-with-care.webp',
+  caption: 'Handle with care, 2024'
+}];
+const brantley = [{
+  src: '/images/posts/carousels/brantley/two-men-sporting-waves.webp',
+  caption: 'TWO MEN SPORTING WAVES, 2019'
+}, {
+  src: '/images/posts/carousels/brantley/smile-1-1.webp',
+  caption: '“Smile” (1/1 Proof) Framed, 2019'
+}, {
+  src: '/images/posts/carousels/brantley/3-the-hard-way.webp',
+  caption: '3 THE HARD WAY, 2020'
+}, {
+  src: '/images/posts/carousels/brantley/calling-all-cars.webp',
+  caption: 'Calling All Cars, 2022'
+}, {
+  src: '/images/posts/carousels/brantley/smile-1-1.webp',
+  caption: "EDITIONS PHIBBY Print Artist's Proof, 2021"
+}];
+const weiwei = [{
+  src: '/images/posts/carousels/weiwei/guardian.webp',
+  caption: 'Guardian, 2024'
+}, {
+  src: '/images/posts/carousels/weiwei/81-questions.webp',
+  caption: '81 Questions?, 2024'
+}, {
+  src: '/images/posts/carousels/weiwei/cats-red.webp',
+  caption: 'Cats Red, 2024'
+}, {
+  src: '/images/posts/carousels/weiwei/bomb.webp',
+  caption: 'BOMB, 2020'
+}, {
+  src: '/images/posts/carousels/weiwei/treadmill-aluminium.webp',
+  caption: 'TREADMILL ALUMINIUM, 2022'
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    em: "em",
+    h2: "h2",
+    li: "li",
+    p: "p",
+    strong: "strong",
+    ul: "ul",
+    ...props.components
+  };
+  return createVNode(Fragment, {
+    children: [createVNode(_components.p, {
+      children: ["En ", createVNode(_components.strong, {
+        children: "uno de nuestros artículos anteriores"
+      }), " exploramos una primera selección de artistas contemporáneos con proyección, algunos consagrados dentro del arte moderno y otros más emergentes, pero con fuerte presencia cultural. Nombres como Takashi Murakami, KAWS y Damien Hirst entre otros, formaron parte de esa lista inicial (", createVNode(_components.a, {
+        href: "https://elbauldelfriki.com/blog/top-siete-artistas-por-3000",
+        children: "y si no has leído ese artículo, ¿qué esperas?"
+      }), ")."]
+    }), "\n", createVNode(_components.p, {
+      children: ["Hoy, ampliamos el radar y te traemos una segunda entrega con artistas igual de interesantes —algunos incluso con mayor potencial de valorización por estar en etapas más tempranas de su carrera o tener obra aún subestimada. Todos con un denominador común: ", createVNode(_components.strong, {
+        children: "puedes comenzar a coleccionar por menos de $3,000"
+      }), "."]
+    }), "\n", createVNode(_components.h2, {
+      id: "7-artistas-contemporáneos-por-menos-de-3000",
+      children: "7 artistas contemporáneos por menos de $3,000"
+    }), "\n", createVNode(PostCarousel, {
+      images: amano,
+      "client:load": true,
+      "client:component-path": "/Users/richardarmuelles/Projects/el-baul-del-friki/src/components/posts/PostCarousel.svelte",
+      "client:component-export": "default",
+      "client:component-hydration": true
+    }), "\n", createVNode(_components.ul, {
+      children: ["\n", createVNode(_components.li, {
+        children: [createVNode(_components.strong, {
+          children: "Takeru Amano"
+        }), " ", createVNode(_components.em, {
+          children: "(Japón, 1977)"
+        }), ": Pintor y escultor japonés con un estilo pop refinado y elegante. Siempre estuvo inmerso en el mundo artístico ya que su padre es el pintor ", createVNode(_components.em, {
+          children: "Yoshitaka Amano"
+        }), ". En 1997, ", createVNode(_components.strong, {
+          children: "Takeru viaja a New York para estudiar grabado"
+        }), " y no es hasta principios de la década del 2000 que regresa a Japón y empieza a pintar seriamente. Sus reinterpretaciones contemporáneas de figuras clásicas (como Venus o Cupido) con trazos minimalistas, colores vibrantes y planos le han ganado una base sólida de coleccionistas internacionales. Sus prints, esculturas pequeñas y colaboraciones se mantienen dentro de precios accesibles."]
+      }), "\n"]
+    }), "\n", createVNode(PostCarousel, {
+      images: arsham,
+      "client:load": true,
+      "client:component-path": "/Users/richardarmuelles/Projects/el-baul-del-friki/src/components/posts/PostCarousel.svelte",
+      "client:component-export": "default",
+      "client:component-hydration": true
+    }), "\n", createVNode(_components.ul, {
+      children: ["\n", createVNode(_components.li, {
+        children: [createVNode(_components.strong, {
+          children: "Daniel Arsham"
+        }), " ", createVNode(_components.em, {
+          children: "(Estados Unidos, 1980)"
+        }), ": Arsham ha construido un universo propio con esculturas que parecen ruinas del futuro con ", createVNode(_components.strong, {
+          children: "objetos erosionados, corroidos y calcificados"
+        }), " con elementos de todo tipo desde objetos cotidianos como cajas de cereales, teléfonos y relojes despertadores hasta figuras relacionadas a la cultura pop y la escultura clásica. Su obra atraviesa arte, arquitectura y diseño. Las ediciones limitadas de objetos y prints suelen rondar precios coleccionables, aunque suben rápido."]
+      }), "\n"]
+    }), "\n", createVNode(PostCarousel, {
+      images: mr,
+      "client:load": true,
+      "client:component-path": "/Users/richardarmuelles/Projects/el-baul-del-friki/src/components/posts/PostCarousel.svelte",
+      "client:component-export": "default",
+      "client:component-hydration": true
+    }), "\n", createVNode(_components.ul, {
+      children: ["\n", createVNode(_components.li, {
+        children: [createVNode(_components.strong, {
+          children: "Mr."
+        }), " ", createVNode(_components.em, {
+          children: "(Cuba, 1969)"
+        }), ": Aquí estamos haciendo un poco de trampa, pues técnicamente Mr. es japonés, pero aparentemente nació en Cuba. Discípulo directo de Takashi Murakami y ", createVNode(_components.strong, {
+          children: "parte del colectivo Kaikai Kiki desde mediados de los 90’s"
+        }), " cuando se graduó de la Tokyo’s Sokei Academy of Fine Art and Design. Mr. mezcla cultura otaku con crítica social y nostalgia juvenil, en piezas que oscilan entre lo adorable, lo perturbador y lo provocador, por lo que su arte puede ser difícil de asimilar en occidente. Aunque algunas obras alcanzan precios altos, aún hay grabados y ediciones en circulación dentro del rango asequible."]
+      }), "\n"]
+    }), "\n", createVNode(PostCarousel, {
+      images: aoshima,
+      "client:load": true,
+      "client:component-path": "/Users/richardarmuelles/Projects/el-baul-del-friki/src/components/posts/PostCarousel.svelte",
+      "client:component-export": "default",
+      "client:component-hydration": true
+    }), "\n", createVNode(_components.ul, {
+      children: ["\n", createVNode(_components.li, {
+        children: [createVNode(_components.strong, {
+          children: "Chiho Aoshima"
+        }), " ", createVNode(_components.em, {
+          children: "(Japón, 1974)"
+        }), ": ", createVNode(_components.strong, {
+          children: "Otra artista vinculada a Kaikai Kiki"
+        }), ". Su estilo surrealista y digital combina paisajes oníricos con elementos de folklore japonés y ciencia ficción. Aoshima representa una voz única dentro del arte contemporáneo japonés, ha tenido varias presentaciones desde el Carnegie International hasta el MoMA. En 2005 presenta un cortometraje animado en conjunto con el animador neozelandés Bruce Ferguson, en un proyecto llamado ", createVNode(_components.em, {
+          children: "City Glow"
+        }), ", en el que se representa el interés de ella sobre la relación que hay entre los humanos y la naturaleza. Sus ediciones limitadas tienen buena relación calidad-precio ofreciendo una excelente entrada para nuevos inversores."]
+      }), "\n"]
+    }), "\n", createVNode(PostCarousel, {
+      images: fairey,
+      "client:load": true,
+      "client:component-path": "/Users/richardarmuelles/Projects/el-baul-del-friki/src/components/posts/PostCarousel.svelte",
+      "client:component-export": "default",
+      "client:component-hydration": true
+    }), "\n", createVNode(_components.ul, {
+      children: ["\n", createVNode(_components.li, {
+        children: [createVNode(_components.strong, {
+          children: "Shepard Fairey"
+        }), " ", createVNode(_components.em, {
+          children: "(Estados Unidos, 1970)"
+        }), ": Una de las más grandes figuras del movimiento del arte callejero moderno. Conocido mundialmente por ", createVNode(_components.strong, {
+          children: "el icónico cartel “HOPE” de Obama, presentado en 2008"
+        }), ". Fairey es uno de los artistas urbanos más influyentes del siglo XXI. Fundador del movimiento OBEY, su trabajo mezcla política, activismo y diseño gráfico en lo que personalmente considero una reinterpretación de las míticas ilustraciones propagandísticas de la Unión Soviética. Publica constantemente serigrafías en tiradas limitadas, muchas de las cuales se mantienen por debajo de los $1,000 e incluso se pueden conseguir prints de única tirada por menos de $3000."]
+      }), "\n"]
+    }), "\n", createVNode(PostCarousel, {
+      images: brantley,
+      "client:load": true,
+      "client:component-path": "/Users/richardarmuelles/Projects/el-baul-del-friki/src/components/posts/PostCarousel.svelte",
+      "client:component-export": "default",
+      "client:component-hydration": true
+    }), "\n", createVNode(_components.ul, {
+      children: ["\n", createVNode(_components.li, {
+        children: [createVNode(_components.strong, {
+          children: "Hebru Brantley"
+        }), " ", createVNode(_components.em, {
+          children: "(Estados Unidos, 1970)"
+        }), ": Artista afroamericano que trabaja con el afrofuturismo, la cultura pop y la identidad urbana. Sus personajes icónicos, como ", createVNode(_components.em, {
+          children: "Flyboy y Lil Mama"
+        }), ", conectan con el imaginario infantil y al mismo tiempo abordan temas de raza y resistencia. Sus influencias incluyen a Jean-Michel Basquiat y Keith Haring (de quien hablamos en el post anterior), el hip-hop, historia afroamericana, anime y manga. Ha colaborado con marcas importantes y sus prints o figuras de vinilo son altamente coleccionables, al punto de que han sido parte de ", createVNode(_components.strong, {
+          children: "las colecciones privadas de personalidades como LeBron James, Beyoncé y George Lucas"
+        }), ". No por nada se ha convertido en un favorito entre celebridades y coleccionistas de nueva generación."]
+      }), "\n"]
+    }), "\n", createVNode(PostCarousel, {
+      images: weiwei,
+      "client:load": true,
+      "client:component-path": "/Users/richardarmuelles/Projects/el-baul-del-friki/src/components/posts/PostCarousel.svelte",
+      "client:component-export": "default",
+      "client:component-hydration": true
+    }), "\n", createVNode(_components.ul, {
+      children: ["\n", createVNode(_components.li, {
+        children: [createVNode(_components.strong, {
+          children: "Ai Weiwei"
+        }), " ", createVNode(_components.em, {
+          children: "(China, 1957)"
+        }), ": Artista disidente famoso por sus obras que desafían la autoridad, ", createVNode(_components.strong, {
+          children: "sus fotografías y otras performances le valieron la ira del gobierno chino"
+        }), ", quienes lo encarcelaron por 81 días y años más tarde demolieron su estudio, por esta razón, Ai decide abandonar su país en 2015. Ai estudió en la Academia de Cine de Pekín antes de asistir a la Escuela de Diseño Parsons, y ha expuesto en New York, Los Ángeles, París, Copenhague, Pekín, Londres y otras ciudades. Aunque su nombre suena más al circuito institucional, Ai Weiwei también produce ediciones limitadas, objetos conceptuales y piezas pequeñas con fuerte carga política. Si bien muchas de sus obras superan los $3,000, hay entradas más accesibles para quienes buscan coleccionar arte con contenido crítico y peso cultural."]
+      }), "\n"]
+    }), "\n", createVNode(_components.h2, {
+      id: "conclusión",
+      children: "Conclusión"
+    }), "\n", createVNode(_components.p, {
+      children: "Invertir en arte no es solo cuestión de estética, también es apostar por discursos, movimientos y tendencias. Esta lista complementa la anterior con nombres que, aunque quizás menos conocidos en algunos círculos, tienen propuestas sólidas y potencial de crecimiento."
+    }), "\n", createVNode(_components.p, {
+      children: [createVNode(_components.strong, {
+        children: "Recuerda:"
+      }), " coleccionar también es descubrir. Algunos de estos artistas pueden ser tu próxima mejor inversión o simplemente el inicio de una relación significativa con el arte contemporáneo."]
+    }), "\n", createVNode(_components.p, {
+      children: "¿Ya conocías a alguno? ¿Tienes en la mira a otros nombres interesantes? Escríbelo en los comentarios."
+    }), "\n", createVNode($$CTA, {
+      category: frontmatter.category
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = props.components || ({});
+  return MDXLayout ? createVNode(MDXLayout, {
+    ...props,
+    children: createVNode(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+const url = "src/content/posts/otros-siete-artistas-por-3000.mdx";
+const file = "/Users/richardarmuelles/Projects/el-baul-del-friki/src/content/posts/otros-siete-artistas-por-3000.mdx";
+const Content = (props = {}) => MDXContent({
+  ...props,
+  components: { Fragment: Fragment, ...components, ...props.components, },
+});
+Content[Symbol.for('mdx-component')] = true;
+Content[Symbol.for('astro.needsHeadRendering')] = !Boolean(frontmatter.layout);
+Content.moduleId = "/Users/richardarmuelles/Projects/el-baul-del-friki/src/content/posts/otros-siete-artistas-por-3000.mdx";
+__astro_tag_component__(Content, 'astro:jsx');
+
+export { Content, amano, aoshima, arsham, brantley, components, Content as default, fairey, file, frontmatter, getHeadings, mr, url, weiwei };

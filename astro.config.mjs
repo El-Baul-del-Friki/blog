@@ -13,6 +13,7 @@ import netlify from '@astrojs/netlify';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://elbauldelfriki.com',
   integrations: [svelte(), markdoc(), partytown({
     config: {
       forward: ["dataLayer.push"]
