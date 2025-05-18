@@ -57,9 +57,14 @@ const categoryColors = {
 						</h2>
 						<p class="text-sm text-gray-500 dark:text-gray-400 mb-2">
 							Publicado:{" "}
-							{new Date(
-								post.frontmatter.date
-							).toLocaleDateString()}
+							{new Date(post.frontmatter.date).toLocaleDateString(
+								"es-PA",
+								{
+									year: "numeric",
+									month: "long",
+									day: "numeric",
+								}
+							)}
 						</p>
 						<div class="flex flex-wrap gap-2 mb-3">
 							{categories.map((category) => (

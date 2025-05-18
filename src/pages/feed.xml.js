@@ -2,7 +2,9 @@ import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
 
 export async function GET(context) {
-  const blog = await getCollection('posts');
+  const blog = (await getCollection('posts')).sort(
+    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+  );
   return rss({
     title: 'El Baúl del Friki',
     // add `xmlns:media="http://search.yahoo.com/mrss/"`
@@ -13,7 +15,7 @@ export async function GET(context) {
     site: 'https://elbauldelfriki.com',
     items: blog.map((post) => ({
       title: post.data.title,
-      pubDate: new Date(post.data.date),
+      pubDate: new Date(post.data.date).toUTCString(),
       description: post.data.excerpt,
       // Compute RSS link from post `id`
       // This example assumes all posts are rendered as `/blog/[id]` routes
