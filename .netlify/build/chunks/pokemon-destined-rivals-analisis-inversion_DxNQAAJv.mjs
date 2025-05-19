@@ -1,8 +1,0 @@
-async function getMod() {
-						return import('./pokemon-destined-rivals-analisis-inversion_D3gSu_WD.mjs');
-					}
-					const collectedLinks = [];
-					const collectedStyles = [".carousel-wrapper.svelte-mr878u{overflow:hidden;position:relative;width:100%}.carousel-track.svelte-mr878u{display:flex;transition:transform .3s ease}.carousel-item.svelte-mr878u{flex:0 0 auto;padding:.5rem;box-sizing:border-box;text-align:center;position:relative}.carousel-item.svelte-mr878u img:where(.svelte-mr878u){border:1px solid rgba(255,255,255,.1);box-shadow:0 2px 8px #00000026;border-radius:8px}.carousel-item.svelte-mr878u:hover img:where(.svelte-mr878u){box-shadow:0 4px 16px #ff00004d}.carousel-item.svelte-mr878u figcaption:where(.svelte-mr878u){margin-top:.25rem;font-size:.75rem}.carousel-button.svelte-mr878u{position:absolute;top:50%;transform:translateY(-50%);z-index:10;background-color:#ffffffb3;border:none;padding:.5rem;cursor:pointer}.left-btn.svelte-mr878u{left:0}.right-btn.svelte-mr878u{right:0}.modal.svelte-mr878u{position:fixed;inset:0;background:#000c;display:flex;align-items:center;justify-content:center;z-index:50}.modal-content.svelte-mr878u{max-width:90%;max-height:90%;position:relative;text-align:center}.modal-content.svelte-mr878u img:where(.svelte-mr878u){max-width:100%;max-height:80vh;border-radius:.5rem}.close-btn.svelte-mr878u{position:absolute;top:.5rem;right:.5rem;background:#fff;border:none;font-size:1.25rem;padding:.25rem .5rem;cursor:pointer;border-radius:.25rem}\n"];
-					const defaultMod = { __astroPropagation: true, getMod, collectedLinks, collectedStyles, collectedScripts: [] };
-
-export { defaultMod as default };
