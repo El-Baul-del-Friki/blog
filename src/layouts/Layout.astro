@@ -4,7 +4,12 @@ import Header from "../components/Header.svelte";
 import Footer from "../components/Footer.svelte";
 
 // Recibe la prop 'title' desde la página que lo use
-const { title = "El Baúl del Friki", excerpt, tags } = Astro.props;
+const {
+	title = "El Baúl del Friki",
+	excerpt,
+	tags,
+	canonicalUrl,
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -17,6 +22,10 @@ const { title = "El Baúl del Friki", excerpt, tags } = Astro.props;
 		<meta name="description" content={excerpt} />
 		<meta name="keywords" content={tags} />
 		<meta name="author" content="Richard Armuelles" />
+		<link
+			rel="canonical"
+			href={canonicalUrl ?? "https://elbauldelfriki.com"}
+		/>
 		<!-- Título dinámico -->
 		<title>
 			{title ? `${title} - El Baúl del Friki` : "El Baúl del Friki"}

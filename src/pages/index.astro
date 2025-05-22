@@ -2,6 +2,10 @@
 import Layout from "../layouts/Layout.astro";
 import HeroSlider from "../components/HeroSlider.svelte";
 
+const canonicalUrl = "https://elbauldelfriki.com";
+const excerpt =
+	"Exploramos el coleccionismo de cartas, whisky y arte contemporáneo desde una perspectiva de inversión. Descubre guías, reseñas y análisis únicos.";
+
 interface Frontmatter {
 	title: string;
 	date: string;
@@ -36,7 +40,7 @@ const categoryColors = {
 };
 ---
 
-<Layout title="Inicio">
+<Layout title="Inicio" canonicalUrl={canonicalUrl} excerpt={excerpt}>
 	<HeroSlider client:load posts={featuredPosts} />
 
 	<section

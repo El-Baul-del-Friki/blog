@@ -33,9 +33,27 @@ const filteredPosts = posts.filter((post) => {
 			.map((cat) => cat.trim().toLowerCase()) || [];
 	return categorias.includes(categoria.toLowerCase());
 });
+
+const canonicalUrl = "https://elbauldelfriki.com/categorias/" + categoria;
+
+const excerpt = () => {
+	if (categoria == "cartas") {
+		return "Análisis de cartas coleccionables como Pokémon, One Piece y más. Mira precios, rarezas y oportunidades de inversión en el mercado real y digital.";
+	} else if (categoria == "whisky") {
+		return "Guías y tendencias sobre whisky de colección como Ardbeg, Macallan y más. Ideal para quienes invierten, no solo para quienes beben.";
+	} else if (categoria == "arte") {
+		return "Exploro figuras, colaboraciones y movimientos entre el arte contemporáneo y el coleccionismo, desde Bearbrick hasta arte contemporaneo.";
+	} else {
+		return "Espacio donde comparto pensamientos y temas diversos del mundo del coleccionismo y la cultura friki que no caben en secciones tradicionales.";
+	}
+};
 ---
 
-<Layout title={`Categoría: ${categoria}`}>
+<Layout
+	title={`Categoría: ${categoria}`}
+	canonicalUrl={canonicalUrl}
+	excerpt={excerpt()}
+>
 	<section class="grid grid-cols-1 gap-6 p-6 my-20">
 		{
 			filteredPosts.map((post) => (

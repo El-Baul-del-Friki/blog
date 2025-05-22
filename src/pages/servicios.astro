@@ -7,11 +7,19 @@ import ConnoissieurForm from "../components/ConnoissieurForm.svelte";
 import H2 from "../components/posts/H2.astro";
 import Paragraph from "../components/posts/Paragraph.astro";
 
+const canonicalUrl = "https://elbauldelfriki.com/servicios";
+const excerpt =
+	"Quiero que aprendas a invertir en assets tangibles con valor a largo plazo, selecciona el nivel que mejor se ajusta a tus objetivos";
+
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout title="Curadoria de Inversiones">
+<Layout
+	title="Curadoria de Inversiones"
+	canonicalUrl={canonicalUrl}
+	excerpt={excerpt}
+>
 	<section class="bg-white dark:bg-gray-900 my-20">
 		<div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
 			<div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">

@@ -3,9 +3,17 @@ import Layout from "../layouts/Layout.astro";
 import whiskyToplist from "../content/data/whiskies.json";
 import cardTopList from "../content/data/cards.json";
 import artTopList from "../content/data/art.json";
+
+const canonicalUrl = "https://elbauldelfriki.com/seguimiento";
+const excerpt =
+	"Aquí podrás encontrar algunas piezas artisticas y coleccionables destacados de la semana";
 ---
 
-<Layout title="Seguimiento de Precios">
+<Layout
+	title="Seguimiento de Precios"
+	canonicalUrl={canonicalUrl}
+	excerpt={excerpt}
+>
 	<article class="bg-white dark:bg-gray-900 mx-auto p-6 my-20">
 		<h1 class="text-4xl font-bold mb-2">
 			Seguimiento de precios en coleccionables destacados
