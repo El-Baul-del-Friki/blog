@@ -32,7 +32,7 @@ const canonicalUrl = "https://elbauldelfriki.com/blog/" + frontmatter.slug;
 	tags={frontmatter.tags}
 	canonicalUrl={canonicalUrl}
 >
-	<article class="prose dark:prose-invert max-w-4xl mx-auto p-6 my-10">
+	<article class="prose dark:prose-invert max-w-5xl mx-auto p-6 my-10">
 		<h1 class="text-4xl font-bold mb-2 mt-4">{frontmatter.title}</h1>
 
 		<p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
@@ -64,8 +64,11 @@ const canonicalUrl = "https://elbauldelfriki.com/blog/" + frontmatter.slug;
 					))
 			}
 		</div>
-		<Content />
-		<div id="disqus_thread"></div>
+		<div class="pb-4">
+			<Content />
+		</div>
+
+		<div id="disqus_thread" class=""></div>
 	</article>
 </Layout>
 
