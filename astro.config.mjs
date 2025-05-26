@@ -11,14 +11,17 @@ import mdx from '@astrojs/mdx';
 
 import netlify from '@astrojs/netlify';
 
+import db from '@astrojs/db';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://elbauldelfriki.com',
+  output: 'server',
   integrations: [svelte(), markdoc(), partytown({
     config: {
       forward: ["dataLayer.push"]
     }
-  }), sitemap(), mdx()],
+  }), sitemap(), mdx(), db()],
   adapter: netlify(),
   vite: {
     plugins: [tailwindcss()]

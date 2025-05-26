@@ -1,18 +1,37 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import Comments from "../../components/Comments.astro";
 
-export async function getStaticPaths() {
-	const posts = await Astro.glob("../../content/posts/*.mdx");
+// Importa glob para cargar los MDX
+const allPosts = await Astro.glob("../../content/posts/*.mdx");
 
-	return posts.map((post) => ({
-		params: {
-			slug: post.frontmatter.slug,
-		},
-		props: {
-			post,
-		},
-	}));
+// export async function getStaticPaths() { // Ya no necesitamos pasar el 'post' completo como prop
+//   const posts = await Astro.glob("../../content/posts/*.mdx");
+//   return posts.map((post) => ({
+//     params: {
+//       slug: post.frontmatter.slug,
+//     },
+//     props: {
+//       // No necesitas pasar 'post' completo aquí, solo el slug para el params
+//       // o si necesitas alguna prop específica para el layout antes de cargar el contenido
+//       // por ejemplo: slug: post.frontmatter.slug // Ya está en params
+//     },
+//   }));
+// }
+
+// Obtén el slug de los parámetros de la URL
+const { slug } = Astro.params;
+
+// Busca el post correspondiente al slug
+const post = allPosts.find((p) => p.frontmatter.slug === slug);
+
+// Manejo de error si el post no se encuentra (opcional, pero buena práctica)
+if (!post) {
+	return Astro.redirect("/404"); // Redirige a una página 404 o muestra un error
 }
+
+// Ahora puedes desestructurar Content y frontmatter directamente del post encontrado
+const { Content, frontmatter } = post;
 
 const categoryColors = {
 	general: "bg-blue-200 text-blue-900",
@@ -20,8 +39,6 @@ const categoryColors = {
 	whisky: "bg-amber-200 text-amber-900",
 	arte: "bg-pink-200 text-pink-900",
 };
-
-const { Content, frontmatter } = Astro.props.post;
 
 const canonicalUrl = "https://elbauldelfriki.com/blog/" + frontmatter.slug;
 ---
@@ -49,6 +66,7 @@ const canonicalUrl = "https://elbauldelfriki.com/blog/" + frontmatter.slug;
 			src={`/${frontmatter.featuredImage.src}`}
 			alt={frontmatter.title}
 			class="rounded-xl mb-6 w-full object-cover max-h-96"
+			transition:name={`post-image-${frontmatter.slug}`}
 		/>
 
 		<div class="flex flex-wrap gap-2 mb-3">
@@ -68,27 +86,9 @@ const canonicalUrl = "https://elbauldelfriki.com/blog/" + frontmatter.slug;
 			<Content />
 		</div>
 
-		<div id="disqus_thread" class=""></div>
+		<div class="my-8">
+			<Comments postSlug={slug} />
+			{/* Asegúrate de pasar el slug correcto */}
+		</div>
 	</article>
 </Layout>
-
-<script>
-	/**
-	 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-	 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-
-	var disqus_config = function () {
-		this.page.url =
-			"https://elbauldelfriki.com/" + window.location.pathname; // Replace PAGE_URL with your page's canonical URL variable
-		this.page.identifier = window.location.pathname; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-	};
-
-	(function () {
-		// DON'T EDIT BELOW THIS LINE
-		var d = document,
-			s = d.createElement("script");
-		s.src = "https://el-baul-del-friki.disqus.com/embed.js";
-		s.setAttribute("data-timestamp", +new Date());
-		(d.head || d.body).appendChild(s);
-	})();
-</script>

@@ -1,4 +1,6 @@
 ---
+import { ClientRouter } from "astro:transitions";
+
 import "/src/styles/global.css";
 import Header from "../components/Header.svelte";
 import Footer from "../components/Footer.svelte";
@@ -30,6 +32,7 @@ const {
 		<title>
 			{title ? `${title} - El Baúl del Friki` : "El Baúl del Friki"}
 		</title>
+		<ClientRouter />
 		<script
 			type="text/partytown"
 			async
