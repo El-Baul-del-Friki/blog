@@ -4,8 +4,8 @@ export default async function () {
 	await db.insert(Comment).values([
 		{
 			postSlug: "bienvenido-blog-coleccionismo",
-			name: "Jamie",
-			email: "jamie@turso.tech",
+			userId: "John Doe",
+			email: "johndoe@email.com",
 			message: "Great post!",
 			createdAt: new Date(),
 		},

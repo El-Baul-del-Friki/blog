@@ -1,0 +1,14 @@
+---
+// src/components/Comments.astro
+import CommentsSection from "./CommentsSection.svelte"; // Importa el nuevo componente Svelte
+import { getSession } from "auth-astro/server"; // Para pasar la sesión al componente Svelte
+
+interface Props {
+	postSlug: string;
+}
+
+const { postSlug } = Astro.props;
+const session = await getSession(Astro.request); // Obtener la sesión aquí en el servidor
+---
+
+<CommentsSection postSlug={postSlug} session={session} client:visible />

@@ -13,6 +13,8 @@ import netlify from '@astrojs/netlify';
 
 import db from '@astrojs/db';
 
+import auth from 'auth-astro';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://elbauldelfriki.com',
@@ -21,7 +23,7 @@ export default defineConfig({
     config: {
       forward: ["dataLayer.push"]
     }
-  }), sitemap(), mdx(), db()],
+  }), sitemap(), mdx(), db(), auth()],
   adapter: netlify(),
   vite: {
     plugins: [tailwindcss()]
