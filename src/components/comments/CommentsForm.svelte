@@ -89,7 +89,11 @@
 		</p>
 	</div>
 {:else}
-	<form on:submit={handleSubmit} class="mb-8" data-astro-no-view-transition>
+	<form
+		on:submit|preventDefault={handleSubmit}
+		class="mb-8"
+		data-astro-no-view-transition
+	>
 		<input type="hidden" name="postSlug" value={postSlug} />
 		{#if commentToEdit}
 			<input type="hidden" name="id" value={commentToEdit.id} />
