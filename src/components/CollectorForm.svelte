@@ -48,6 +48,7 @@
 				target="_blank"
 				accept-charset="UTF-8"
 				enctype="multipart/form-data"
+				data-astro-no-view-transition
 			>
 				<input type="hidden" name="zf_referrer_name" value="" />
 				<input type="hidden" name="zf_redirect_url" value="" />

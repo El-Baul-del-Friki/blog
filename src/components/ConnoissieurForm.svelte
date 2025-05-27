@@ -48,6 +48,7 @@
 				target="_blank"
 				accept-charset="UTF-8"
 				enctype="multipart/form-data"
+				data-astro-no-view-transition
 			>
 				<input type="hidden" name="zf_referrer_name" value="" />
 				<input type="hidden" name="zf_redirect_url" value="" />
@@ -103,17 +104,20 @@
 					<option value="Otros">Otros</option>
 				</select>
 
-        <p
+				<p
 					class="mb-5 text-sm font-medium text-gray-500 dark:text-gray-300"
 				>
 					¿Tienes activos de estos tipos en tu posesión?
 				</p>
 
-        <select name="Dropdown2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-          <option selected="true" value="-Select-">-Select-</option>
-          <option value="S&iacute;">S&iacute;</option>
-          <option value="No">No</option>
-        </select>
+				<select
+					name="Dropdown2"
+					class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+				>
+					<option selected="true" value="-Select-">-Select-</option>
+					<option value="S&iacute;">S&iacute;</option>
+					<option value="No">No</option>
+				</select>
 
 				<p
 					class="mb-5 text-sm font-medium text-gray-500 dark:text-gray-300"
@@ -141,11 +145,13 @@
 					name="Dropdown"
 					class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
 				>
-        <option selected="true" value="-Select-">-Select-</option>
-        <option value="B&#x2f;.250-500">B&#x2f;.250-500</option>
-        <option value="B&#x2f;.500-1000">B&#x2f;.500-1000</option>
-        <option value="B&#x2f;.1000-5000">B&#x2f;.1000-5000</option>
-        <option value="m&aacute;s&#x20;de&#x20;B&#x2f;.5000">m&aacute;s de B&#x2f;.5000</option>
+					<option selected="true" value="-Select-">-Select-</option>
+					<option value="B&#x2f;.250-500">B&#x2f;.250-500</option>
+					<option value="B&#x2f;.500-1000">B&#x2f;.500-1000</option>
+					<option value="B&#x2f;.1000-5000">B&#x2f;.1000-5000</option>
+					<option value="m&aacute;s&#x20;de&#x20;B&#x2f;.5000"
+						>m&aacute;s de B&#x2f;.5000</option
+					>
 				</select>
 
 				<p
