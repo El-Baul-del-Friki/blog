@@ -109,7 +109,11 @@
 
 			<h1 class="text-2xl font-semibold mb-4">Contáctame</h1>
 
-			<form on:submit|preventDefault={handleSubmit} class="space-y-4">
+			<form
+				on:submit|preventDefault={handleSubmit}
+				class="space-y-4"
+				data-astro-reload
+			>
 				<div class="flex gap-2">
 					<input
 						type="text"

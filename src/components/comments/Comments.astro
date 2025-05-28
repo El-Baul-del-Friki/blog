@@ -11,9 +11,4 @@ const { postSlug } = Astro.props;
 const session = await getSession(Astro.request); // Obtener la sesión aquí en el servidor
 ---
 
-<CommentsSection
-	postSlug={postSlug}
-	session={session}
-	client:visible
-	transition:animate="none"
-/>
+<CommentsSection postSlug={postSlug} session={session} client:visible />
