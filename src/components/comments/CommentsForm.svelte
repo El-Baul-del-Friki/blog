@@ -68,7 +68,7 @@
 			inputErrors = {}; // Limpia errores
 			dispatch("submitted"); // Notifica al padre (CommentsSection.svelte) que se ha enviado
 			// Puedes querer recargar la página o actualizar la lista de comentarios aquí
-			location.reload();
+			//location.reload();
 		} catch (error) {
 			console.error("Network or other error:", error);
 			alert("Hubo un problema de red al enviar el comentario.");
@@ -89,11 +89,7 @@
 		</p>
 	</div>
 {:else}
-	<form
-		on:submit|preventDefault={handleSubmit}
-		class="mb-8"
-		data-astro-reload
-	>
+	<form on:submit|preventDefault={handleSubmit} class="mb-8">
 		<input type="hidden" name="postSlug" value={postSlug} />
 		{#if commentToEdit}
 			<input type="hidden" name="id" value={commentToEdit.id} />

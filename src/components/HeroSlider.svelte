@@ -19,7 +19,6 @@
 				src={post.frontmatter.featuredImage.src}
 				alt={post.frontmatter.title}
 				class="w-full h-90 object-cover"
-				transition:name={`post-image-${post.frontmatter.slug}`}
 			/>
 			<div
 				class="absolute bottom-0 left-0 right-0 bg-black/60 p-4 text-white"
