@@ -104,11 +104,11 @@ h6 {
 	font-family: "Playfair Display ExtraBold", serif;
 }
 
-p.text-lg a {
+p.text-lg a, ul.list-disc li a {
   text-decoration-line: underline;
   color: var(--color-black-400);
 }
 
-.dark p.text-lg a {
+.dark p.text-lg a, .dark ul.list-disc li a {
   color: var(--color-gray-200);
 }
