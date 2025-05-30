@@ -69,3 +69,7 @@ p.text-lg a, ul.list-disc li a {
 .dark p.text-lg a, .dark ul.list-disc li a {
   color: var(--color-gray-200);
 }
+
+li ul {
+  margin-left: calc(var(--spacing) * 4);
+}
