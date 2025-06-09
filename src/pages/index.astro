@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import HeroSlider from "../components/HeroSlider.svelte";
+import InfiniteScrollPosts from "../components/home/InfiniteScrollPosts.svelte";
 
 const canonicalUrl = "https://elbauldelfriki.com";
 const excerpt =
@@ -9,28 +10,45 @@ const excerpt =
 interface Frontmatter {
 	title: string;
 	date: string;
-	featuredImage: object;
+	featuredImage: {
+		src: string;
+		width?: number;
+		height?: number;
+		format?: string;
+	}; // Asegúrate de que featuredImage también esté bien tipado
 	excerpt: string;
 	slug: string;
 	featured: boolean;
 	category: string;
 }
-const posts = await Astro.glob<Frontmatter>("../content/posts/*.mdx");
+const allPost = await Astro.glob<Frontmatter>("../content/posts/*.mdx");
 
-posts.sort(
+allPost.sort(
 	(a, b) =>
 		new Date(b.frontmatter.date).getTime() -
 		new Date(a.frontmatter.date).getTime()
 );
 
-const featuredPosts = posts
+const featuredPosts = allPost
 	.filter((post) => post.frontmatter.featured)
 	.slice(0, 3);
 
 // Los que no son featured o los que quedaron fuera del top 3
-const normalPosts = posts.filter(
+const normalPosts = allPost.filter(
 	(post) => !post.frontmatter.featured || !featuredPosts.includes(post)
 );
+
+// Cantidad inicial de posts a mostrar
+const INITIAL_LOAD_COUNT = 4; // Por ejemplo, 6 posts iniciales
+const initialPosts = normalPosts.slice(0, INITIAL_LOAD_COUNT).map((post) => ({
+	title: post.frontmatter.title,
+	date: post.frontmatter.date,
+	featuredImage: post.frontmatter.featuredImage,
+	excerpt: post.frontmatter.excerpt,
+	slug: post.frontmatter.slug,
+	category: post.frontmatter.category,
+}));
+const totalPostsCount = normalPosts.length;
 
 const categoryColors = {
 	general: "bg-blue-200 text-blue-900",
@@ -43,54 +61,11 @@ const categoryColors = {
 <Layout title="Inicio" canonicalUrl={canonicalUrl} excerpt={excerpt}>
 	<HeroSlider client:load posts={featuredPosts} />
 
-	<section
-		class="grid grid-cols-1 xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 p-6 my-10"
-	>
-		{
-			normalPosts.map((post) => {
-				const categories = post.frontmatter.category.split(",");
-				return (
-					<article class="bg-white dark:bg-gray-900 rounded-2xl shadow p-4 transition">
-						<img
-							src={post.frontmatter.featuredImage.src}
-							alt={post.frontmatter.title}
-							class="rounded-xl mb-4 w-full object-cover max-h-60"
-						/>
-						<h2 class="text-2xl font-bold mb-2">
-							{post.frontmatter.title}
-						</h2>
-						<p class="text-sm text-gray-500 dark:text-gray-400 mb-2">
-							Publicado:{" "}
-							{new Date(post.frontmatter.date).toLocaleDateString(
-								"es-PA",
-								{
-									year: "numeric",
-									month: "long",
-									day: "numeric",
-								}
-							)}
-						</p>
-						<div class="flex flex-wrap gap-2 mb-3">
-							{categories.map((category) => (
-								<span
-									class={`px-2 py-1 text-xs font-medium rounded ${categoryColors[category] || "bg-gray-200 text-gray-800"}`}
-								>
-									{category}
-								</span>
-							))}
-						</div>
-						<p class="text-sm">
-							{post.frontmatter.excerpt}..
-							<a
-								href={`/blog/${post.frontmatter.slug}`}
-								class="text-blue-600 dark:text-blue-400 underline text-sm"
-							>
-								Leer más
-							</a>
-						</p>
-					</article>
-				);
-			})
-		}
-	</section>
+	<InfiniteScrollPosts
+		client:visible
+		initialPosts={initialPosts}
+		totalPostsCount={totalPostsCount}
+		initialSkip={INITIAL_LOAD_COUNT}
+		categoryColors={categoryColors}
+	/>
 </Layout>
