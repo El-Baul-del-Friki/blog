@@ -73,6 +73,7 @@
 						src={post.featuredImage.src}
 						alt={post.title}
 						class="rounded-xl mb-4 w-full object-cover max-h-60"
+						loading="lazy"
 					/>
 				{/if}
 				<h2 class="text-2xl font-bold mb-2">{post.title}</h2>
