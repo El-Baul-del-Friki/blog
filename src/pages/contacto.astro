@@ -2,7 +2,6 @@
 import Layout from "../layouts/Layout.astro";
 import ContactForm from "../components/ContactForm.svelte";
 
-import H2 from "../components/posts/H2.astro";
 import Paragraph from "../components/posts/Paragraph.astro";
 import Blockquote from "../components/posts/Blockquote.astro";
 
@@ -40,7 +39,9 @@ const excerpt =
 				class="bg-white dark:bg-gray-900 rounded-2xl shadow p-4 transition"
 				transition:animate="none"
 			>
-				<H2>Hola, soy Richard, aquí un poco de historia.</H2>
+				<h1 class="text-4xl">
+					Hola, soy Richard, aquí un poco de historia.
+				</h1>
 
 				<Paragraph>
 					Crecí entre cartas, tazos y videojuegos. Como muchos niños
